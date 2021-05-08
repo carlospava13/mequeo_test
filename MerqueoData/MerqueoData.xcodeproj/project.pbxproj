@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842F27B12646D20C00C531B1 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F27B02646D20C00C531B1 /* ApiError.swift */; };
+		842F27B62646D24B00C531B1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F27B52646D24B00C531B1 /* ApiClient.swift */; };
 		84CB35212646D1010002B421 /* MerqueoData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CB35172646D1010002B421 /* MerqueoData.framework */; };
 		84CB35262646D1010002B421 /* MerqueoDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB35252646D1010002B421 /* MerqueoDataTests.swift */; };
 		84CB35282646D1010002B421 /* MerqueoData.h in Headers */ = {isa = PBXBuildFile; fileRef = 84CB351A2646D1010002B421 /* MerqueoData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84CB35382646D1420002B421 /* ApiClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB35372646D1420002B421 /* ApiClientType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		842F27B02646D20C00C531B1 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		842F27B52646D24B00C531B1 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		84CB35172646D1010002B421 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CB351A2646D1010002B421 /* MerqueoData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerqueoData.h; sourceTree = "<group>"; };
 		84CB351B2646D1010002B421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		84CB35252646D1010002B421 /* MerqueoDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerqueoDataTests.swift; sourceTree = "<group>"; };
 		84CB35272646D1010002B421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CB35362646D10F0002B421 /* merqueoSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = merqueoSettings.plist; sourceTree = "<group>"; };
+		84CB35372646D1420002B421 /* ApiClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842F27B42646D23800C531B1 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				84CB35372646D1420002B421 /* ApiClientType.swift */,
+				842F27B02646D20C00C531B1 /* ApiError.swift */,
+				842F27B52646D24B00C531B1 /* ApiClient.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
 		84CB350D2646D1010002B421 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +88,7 @@
 		84CB35192646D1010002B421 /* MerqueoData */ = {
 			isa = PBXGroup;
 			children = (
+				842F27B42646D23800C531B1 /* ApiClient */,
 				84CB35362646D10F0002B421 /* merqueoSettings.plist */,
 				84CB351A2646D1010002B421 /* MerqueoData.h */,
 				84CB351B2646D1010002B421 /* Info.plist */,
@@ -149,6 +166,7 @@
 				TargetAttributes = {
 					84CB35162646D1010002B421 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					84CB351F2646D1010002B421 = {
 						CreatedOnToolsVersion = 12.4;
@@ -196,6 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CB35382646D1420002B421 /* ApiClientType.swift in Sources */,
+				842F27B12646D20C00C531B1 /* ApiError.swift in Sources */,
+				842F27B62646D24B00C531B1 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +364,7 @@
 		84CB352C2646D1010002B421 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlos.MerqueoData;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +389,7 @@
 		84CB352D2646D1010002B421 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -389,6 +413,7 @@
 		84CB352F2646D1010002B421 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MerqueoDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +431,7 @@
 		84CB35302646D1010002B421 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MerqueoDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
