@@ -8,10 +8,16 @@
 import Foundation
 
 protocol ApplicationCoordinatorDelegate: AnyObject {
-
+    func showLoading()
+    func hideLoading()
 }
 
 final class ApplicationCoordinator: BaseCoordinator {
+    
+    private lazy var loadindCoordinator: LoadingCoordinator? = {
+        LoadingCoordinator(router: router)
+    }()
+
     override func start() {
         let applicationViewController = ApplicationViewController()
         let dependencies = ApplicationPresenter.InputDependencies(coordinator: self)
@@ -22,11 +28,17 @@ final class ApplicationCoordinator: BaseCoordinator {
 }
 
 extension ApplicationCoordinator: RemoveReferenceDelegate {
-    func removeReference(_ coodinator: BaseCoordinator) {
+    func removeReference(_: BaseCoordinator) {
         removeDependency(self)
-      
     }
 }
- 
+
 extension ApplicationCoordinator: ApplicationCoordinatorDelegate {
+    func showLoading() {
+        loadindCoordinator?.start()
+    }
+    
+    func hideLoading() {
+        loadindCoordinator?.dismiss()
+    }
 }

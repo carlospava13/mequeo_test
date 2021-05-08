@@ -15,6 +15,7 @@ final class ApplicationViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .black
     }
 }
 

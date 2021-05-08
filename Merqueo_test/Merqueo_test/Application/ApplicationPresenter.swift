@@ -20,7 +20,10 @@ final class ApplicationPresenter: BasePresenter {
     }
     
     override func viewDidLoad() {
-       
+        dependencies.coordinator?.showLoading()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) { // Change `2.0` to the
+            self.dependencies.coordinator?.hideLoading()
+        }
     }
 }
 

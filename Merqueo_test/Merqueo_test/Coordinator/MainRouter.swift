@@ -83,6 +83,10 @@ final class MainRouter: NSObject, RouterType {
     func dismissModule(animated: Bool = true, completion: (() -> Void)? = nil) {
         navigationController.dismiss(animated: animated, completion: completion)
     }
+    
+    func dismiss(_ module: Presentable, animated: Bool) {
+        module.toPresent().dismiss(animated: animated , completion: nil)
+    }
 
     func setRootModule(_ module: Presentable) {
         setRootModule(module, hideBar: false, animated: true)
