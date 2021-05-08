@@ -9,12 +9,23 @@
 /* Begin PBXBuildFile section */
 		09E9C5411E3FC568F60F2A08 /* Pods_Merqueo_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5F6A59EDA7C0DEF76AFF5D /* Pods_Merqueo_testTests.framework */; };
 		1AC7A9838B305CB3042E07F5 /* Pods_Merqueo_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA427D9AD20ED87B03775F41 /* Pods_Merqueo_test.framework */; };
+		84003E212646F20500FC01B0 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E202646F20500FC01B0 /* BaseCoordinator.swift */; };
+		84003E272646F21900FC01B0 /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E262646F21900FC01B0 /* CoordinatorType.swift */; };
+		84003E2B2646F23000FC01B0 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E2A2646F23000FC01B0 /* Presentable.swift */; };
+		84003E2F2646F24800FC01B0 /* RemoveReferenceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E2E2646F24800FC01B0 /* RemoveReferenceDelegate.swift */; };
+		84003E332646F25B00FC01B0 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E322646F25B00FC01B0 /* MainRouter.swift */; };
+		84003E372646F27600FC01B0 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E362646F27600FC01B0 /* RouterType.swift */; };
+		84003E3C2646F2F800FC01B0 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E3B2646F2F800FC01B0 /* ApplicationViewController.swift */; };
+		84003E432646F32700FC01B0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E422646F32700FC01B0 /* BaseViewController.swift */; };
+		84003E472646F33D00FC01B0 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E462646F33D00FC01B0 /* BasePresenter.swift */; };
+		84003E4B2646F35500FC01B0 /* BaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E4A2646F35500FC01B0 /* BaseContract.swift */; };
+		84003E4F2646F38B00FC01B0 /* ApplicationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E4E2646F38B00FC01B0 /* ApplicationContract.swift */; };
+		84003E532646F39F00FC01B0 /* ApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E522646F39F00FC01B0 /* ApplicationPresenter.swift */; };
+		84003E572646F3B900FC01B0 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E562646F3B900FC01B0 /* ApplicationCoordinator.swift */; };
 		842F27EA2646DE5200C531B1 /* MerqueoData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842F27E92646DE5200C531B1 /* MerqueoData.framework */; };
 		842F27EB2646DE5200C531B1 /* MerqueoData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 842F27E92646DE5200C531B1 /* MerqueoData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8495BEB42646CE34005F4E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEB32646CE34005F4E28 /* AppDelegate.swift */; };
 		8495BEB62646CE34005F4E28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEB52646CE34005F4E28 /* SceneDelegate.swift */; };
-		8495BEB82646CE34005F4E28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEB72646CE34005F4E28 /* ViewController.swift */; };
-		8495BEBB2646CE34005F4E28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8495BEB92646CE34005F4E28 /* Main.storyboard */; };
 		8495BEBE2646CE34005F4E28 /* Merqueo_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEBC2646CE34005F4E28 /* Merqueo_test.xcdatamodeld */; };
 		8495BEC02646CE35005F4E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8495BEBF2646CE35005F4E28 /* Assets.xcassets */; };
 		8495BEC32646CE35005F4E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8495BEC12646CE35005F4E28 /* LaunchScreen.storyboard */; };
@@ -59,12 +70,23 @@
 		1A5F6A59EDA7C0DEF76AFF5D /* Pods_Merqueo_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merqueo_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4654352D7874263AE9B5E3A5 /* Pods-Merqueo_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_testTests.release.xcconfig"; path = "Target Support Files/Pods-Merqueo_testTests/Pods-Merqueo_testTests.release.xcconfig"; sourceTree = "<group>"; };
 		6A292CF8F200A8827B4F6D34 /* Pods-Merqueo_test-Merqueo_testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_test-Merqueo_testUITests.debug.xcconfig"; path = "Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		84003E202646F20500FC01B0 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		84003E262646F21900FC01B0 /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		84003E2A2646F23000FC01B0 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		84003E2E2646F24800FC01B0 /* RemoveReferenceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveReferenceDelegate.swift; sourceTree = "<group>"; };
+		84003E322646F25B00FC01B0 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		84003E362646F27600FC01B0 /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
+		84003E3B2646F2F800FC01B0 /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
+		84003E422646F32700FC01B0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		84003E462646F33D00FC01B0 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		84003E4A2646F35500FC01B0 /* BaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseContract.swift; sourceTree = "<group>"; };
+		84003E4E2646F38B00FC01B0 /* ApplicationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationContract.swift; sourceTree = "<group>"; };
+		84003E522646F39F00FC01B0 /* ApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationPresenter.swift; sourceTree = "<group>"; };
+		84003E562646F3B900FC01B0 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		842F27E92646DE5200C531B1 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8495BEB02646CE34005F4E28 /* Merqueo_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Merqueo_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8495BEB32646CE34005F4E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8495BEB52646CE34005F4E28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8495BEB72646CE34005F4E28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8495BEBA2646CE34005F4E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8495BEBD2646CE34005F4E28 /* Merqueo_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Merqueo_test.xcdatamodel; sourceTree = "<group>"; };
 		8495BEBF2646CE35005F4E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8495BEC22646CE35005F4E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,6 +133,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84003E1F2646F1AC00FC01B0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				84003E202646F20500FC01B0 /* BaseCoordinator.swift */,
+				84003E262646F21900FC01B0 /* CoordinatorType.swift */,
+				84003E2A2646F23000FC01B0 /* Presentable.swift */,
+				84003E2E2646F24800FC01B0 /* RemoveReferenceDelegate.swift */,
+				84003E322646F25B00FC01B0 /* MainRouter.swift */,
+				84003E362646F27600FC01B0 /* RouterType.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		84003E3A2646F2EB00FC01B0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				84003E3B2646F2F800FC01B0 /* ApplicationViewController.swift */,
+				84003E4E2646F38B00FC01B0 /* ApplicationContract.swift */,
+				84003E522646F39F00FC01B0 /* ApplicationPresenter.swift */,
+				84003E562646F3B900FC01B0 /* ApplicationCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		84003E412646F31E00FC01B0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84003E422646F32700FC01B0 /* BaseViewController.swift */,
+				84003E462646F33D00FC01B0 /* BasePresenter.swift */,
+				84003E4A2646F35500FC01B0 /* BaseContract.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		8495BEA72646CE34005F4E28 = {
 			isa = PBXGroup;
 			children = (
@@ -136,10 +192,11 @@
 		8495BEB22646CE34005F4E28 /* Merqueo_test */ = {
 			isa = PBXGroup;
 			children = (
+				84003E412646F31E00FC01B0 /* Base */,
+				84003E3A2646F2EB00FC01B0 /* Application */,
+				84003E1F2646F1AC00FC01B0 /* Coordinator */,
 				8495BEB32646CE34005F4E28 /* AppDelegate.swift */,
 				8495BEB52646CE34005F4E28 /* SceneDelegate.swift */,
-				8495BEB72646CE34005F4E28 /* ViewController.swift */,
-				8495BEB92646CE34005F4E28 /* Main.storyboard */,
 				8495BEBF2646CE35005F4E28 /* Assets.xcassets */,
 				8495BEC12646CE35005F4E28 /* LaunchScreen.storyboard */,
 				8495BEC42646CE35005F4E28 /* Info.plist */,
@@ -299,7 +356,6 @@
 			files = (
 				8495BEC32646CE35005F4E28 /* LaunchScreen.storyboard in Resources */,
 				8495BEC02646CE35005F4E28 /* Assets.xcassets in Resources */,
-				8495BEBB2646CE34005F4E28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,10 +449,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8495BEB82646CE34005F4E28 /* ViewController.swift in Sources */,
+				84003E572646F3B900FC01B0 /* ApplicationCoordinator.swift in Sources */,
+				84003E2F2646F24800FC01B0 /* RemoveReferenceDelegate.swift in Sources */,
+				84003E532646F39F00FC01B0 /* ApplicationPresenter.swift in Sources */,
+				84003E212646F20500FC01B0 /* BaseCoordinator.swift in Sources */,
+				84003E4B2646F35500FC01B0 /* BaseContract.swift in Sources */,
+				84003E372646F27600FC01B0 /* RouterType.swift in Sources */,
+				84003E272646F21900FC01B0 /* CoordinatorType.swift in Sources */,
+				84003E432646F32700FC01B0 /* BaseViewController.swift in Sources */,
 				8495BEB42646CE34005F4E28 /* AppDelegate.swift in Sources */,
+				84003E4F2646F38B00FC01B0 /* ApplicationContract.swift in Sources */,
 				8495BEBE2646CE34005F4E28 /* Merqueo_test.xcdatamodeld in Sources */,
+				84003E472646F33D00FC01B0 /* BasePresenter.swift in Sources */,
 				8495BEB62646CE34005F4E28 /* SceneDelegate.swift in Sources */,
+				84003E2B2646F23000FC01B0 /* Presentable.swift in Sources */,
+				84003E332646F25B00FC01B0 /* MainRouter.swift in Sources */,
+				84003E3C2646F2F800FC01B0 /* ApplicationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,14 +500,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8495BEB92646CE34005F4E28 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8495BEBA2646CE34005F4E28 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8495BEC12646CE35005F4E28 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
