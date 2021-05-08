@@ -59,7 +59,7 @@
 		8495BED42646CE35005F4E28 /* Merqueo_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Merqueo_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8495BED82646CE35005F4E28 /* Merqueo_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merqueo_testUITests.swift; sourceTree = "<group>"; };
 		8495BEDA2646CE35005F4E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8495BEE92646CEB1005F4E28 /* merqueoSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = merqueoSettings.plist; sourceTree = "<group>"; };
+		8495BEE92646CEB1005F4E28 /* merqueoSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = merqueoSettings.plist; path = ../../MerqueoData/MerqueoData/merqueoSettings.plist; sourceTree = "<group>"; };
 		9B1E70E318DD45FE98B973B2 /* Pods-Merqueo_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_test.release.xcconfig"; path = "Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test.release.xcconfig"; sourceTree = "<group>"; };
 		AD4426C9471EA0B674AAD73A /* Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig"; path = "Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B88155FB9A3B8E3BA0137AD2 /* Pods-Merqueo_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_testTests.debug.xcconfig"; path = "Target Support Files/Pods-Merqueo_testTests/Pods-Merqueo_testTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,7 +161,6 @@
 				B88155FB9A3B8E3BA0137AD2 /* Pods-Merqueo_testTests.debug.xcconfig */,
 				4654352D7874263AE9B5E3A5 /* Pods-Merqueo_testTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
