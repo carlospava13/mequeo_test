@@ -7,7 +7,6 @@
 
 import Combine
 import Foundation
-protocol ApiClientType {
-    func execute<T: Codable>(_ request: URLRequest,
-                    decodingType: T.Type) -> AnyPublisher<T, Error> 
+public protocol ApiClientType {
+    func execute<T: Codable>(_ endPoint: EndPoint) -> AnyPublisher<T, Error> 
 }

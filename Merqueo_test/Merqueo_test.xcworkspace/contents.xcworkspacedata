@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../MerqueoData/MerqueoData.xcodeproj">
+      location = "group:Merqueo_test.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Merqueo_test.xcodeproj">
+      location = "group:../MerqueoData/MerqueoData.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

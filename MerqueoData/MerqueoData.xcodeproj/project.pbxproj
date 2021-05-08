@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		842F27B12646D20C00C531B1 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F27B02646D20C00C531B1 /* ApiError.swift */; };
 		842F27B62646D24B00C531B1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F27B52646D24B00C531B1 /* ApiClient.swift */; };
+		842F27C22646D5A300C531B1 /* GetTokenRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F27C12646D5A300C531B1 /* GetTokenRepositoryType.swift */; };
+		842F27C92646D5BF00C531B1 /* GetTokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F27C82646D5BF00C531B1 /* GetTokenRepository.swift */; };
+		842F27D12646D6CE00C531B1 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F27D02646D6CE00C531B1 /* BaseRepository.swift */; };
+		842F27D62646D70000C531B1 /* TokenDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F27D52646D70000C531B1 /* TokenDto.swift */; };
+		842F27DE2646D8E800C531B1 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F27DD2646D8E800C531B1 /* EndPoint.swift */; };
+		842F27F02646E1EC00C531B1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F27EF2646E1EC00C531B1 /* Settings.swift */; };
+		842F27F82646E41600C531B1 /* merqueoSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842F27F72646E41600C531B1 /* merqueoSettings.plist */; };
 		84CB35212646D1010002B421 /* MerqueoData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CB35172646D1010002B421 /* MerqueoData.framework */; };
 		84CB35262646D1010002B421 /* MerqueoDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB35252646D1010002B421 /* MerqueoDataTests.swift */; };
 		84CB35282646D1010002B421 /* MerqueoData.h in Headers */ = {isa = PBXBuildFile; fileRef = 84CB351A2646D1010002B421 /* MerqueoData.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,13 +35,19 @@
 /* Begin PBXFileReference section */
 		842F27B02646D20C00C531B1 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		842F27B52646D24B00C531B1 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		842F27C12646D5A300C531B1 /* GetTokenRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTokenRepositoryType.swift; sourceTree = "<group>"; };
+		842F27C82646D5BF00C531B1 /* GetTokenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTokenRepository.swift; sourceTree = "<group>"; };
+		842F27D02646D6CE00C531B1 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		842F27D52646D70000C531B1 /* TokenDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDto.swift; sourceTree = "<group>"; };
+		842F27DD2646D8E800C531B1 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		842F27EF2646E1EC00C531B1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		842F27F72646E41600C531B1 /* merqueoSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = merqueoSettings.plist; sourceTree = "<group>"; };
 		84CB35172646D1010002B421 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CB351A2646D1010002B421 /* MerqueoData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerqueoData.h; sourceTree = "<group>"; };
 		84CB351B2646D1010002B421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CB35202646D1010002B421 /* MerqueoDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MerqueoDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CB35252646D1010002B421 /* MerqueoDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerqueoDataTests.swift; sourceTree = "<group>"; };
 		84CB35272646D1010002B421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84CB35362646D10F0002B421 /* merqueoSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = merqueoSettings.plist; sourceTree = "<group>"; };
 		84CB35372646D1420002B421 /* ApiClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,8 +76,35 @@
 				84CB35372646D1420002B421 /* ApiClientType.swift */,
 				842F27B02646D20C00C531B1 /* ApiError.swift */,
 				842F27B52646D24B00C531B1 /* ApiClient.swift */,
+				842F27DD2646D8E800C531B1 /* EndPoint.swift */,
+				842F27EF2646E1EC00C531B1 /* Settings.swift */,
 			);
 			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		842F27C02646D58F00C531B1 /* RepositoryType */ = {
+			isa = PBXGroup;
+			children = (
+				842F27C12646D5A300C531B1 /* GetTokenRepositoryType.swift */,
+				842F27D02646D6CE00C531B1 /* BaseRepository.swift */,
+			);
+			path = RepositoryType;
+			sourceTree = "<group>";
+		};
+		842F27C72646D5B300C531B1 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				842F27C82646D5BF00C531B1 /* GetTokenRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		842F27D42646D6F100C531B1 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				842F27D52646D70000C531B1 /* TokenDto.swift */,
+			);
+			path = Dto;
 			sourceTree = "<group>";
 		};
 		84CB350D2646D1010002B421 = {
@@ -88,10 +128,13 @@
 		84CB35192646D1010002B421 /* MerqueoData */ = {
 			isa = PBXGroup;
 			children = (
+				842F27D42646D6F100C531B1 /* Dto */,
+				842F27C72646D5B300C531B1 /* Repository */,
+				842F27C02646D58F00C531B1 /* RepositoryType */,
 				842F27B42646D23800C531B1 /* ApiClient */,
-				84CB35362646D10F0002B421 /* merqueoSettings.plist */,
 				84CB351A2646D1010002B421 /* MerqueoData.h */,
 				84CB351B2646D1010002B421 /* Info.plist */,
+				842F27F72646E41600C531B1 /* merqueoSettings.plist */,
 			);
 			path = MerqueoData;
 			sourceTree = "<group>";
@@ -197,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842F27F82646E41600C531B1 /* merqueoSettings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +258,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842F27D12646D6CE00C531B1 /* BaseRepository.swift in Sources */,
+				842F27D62646D70000C531B1 /* TokenDto.swift in Sources */,
+				842F27DE2646D8E800C531B1 /* EndPoint.swift in Sources */,
 				84CB35382646D1420002B421 /* ApiClientType.swift in Sources */,
+				842F27C22646D5A300C531B1 /* GetTokenRepositoryType.swift in Sources */,
+				842F27C92646D5BF00C531B1 /* GetTokenRepository.swift in Sources */,
+				842F27F02646E1EC00C531B1 /* Settings.swift in Sources */,
 				842F27B12646D20C00C531B1 /* ApiError.swift in Sources */,
 				842F27B62646D24B00C531B1 /* ApiClient.swift in Sources */,
 			);
