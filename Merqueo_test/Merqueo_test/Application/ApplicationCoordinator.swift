@@ -12,11 +12,16 @@ import MerqueoData
 protocol ApplicationCoordinatorDelegate: AnyObject {
     func showLoading()
     func hideLoading()
+    func showHome()
 }
 
 final class ApplicationCoordinator: BaseCoordinator {
     private lazy var loadindCoordinator: LoadingCoordinator? = {
         LoadingCoordinator(router: router)
+    }()
+    
+    private lazy var homeCoordinator: HomeCoordinator = {
+        HomeCoordinator(router: router)
     }()
 
     override func start() {
@@ -33,7 +38,9 @@ final class ApplicationCoordinator: BaseCoordinator {
             saveInteractor: saveTokenInteractor)
         let presenter = ApplicationPresenter(dependencies: dependencies)
         applicationViewController.presenter = presenter
-        router.setRootModule(applicationViewController.toPresent())
+        router.setRootModule(applicationViewController.toPresent(),
+                             hideBar: true,
+                             animated: false)
     }
 }
 
@@ -53,6 +60,12 @@ extension ApplicationCoordinator: ApplicationCoordinatorDelegate {
     func hideLoading() {
         DispatchQueue.main.async {
             self.loadindCoordinator?.dismiss()
+        }
+    }
+    
+    func showHome() {
+        DispatchQueue.main.async {
+            self.homeCoordinator.start()
         }
     }
 }

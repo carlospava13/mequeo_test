@@ -18,6 +18,7 @@ protocol RouterType: AnyObject, Presentable {
           completion: (() -> Void)?)
     func dismissModule(animated: Bool, completion: (() -> Void)?)
     func dismiss(_ module: Presentable, animated: Bool)
-    func setRootModule(_ module: Presentable)
+    func setRootModule(_ module: Presentable, animated: Bool)
+    func setRootModule(_ module: Presentable, hideBar: Bool, animated: Bool)
     func popView()
 }

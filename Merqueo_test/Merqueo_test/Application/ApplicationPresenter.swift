@@ -28,6 +28,7 @@ final class ApplicationPresenter: BasePresenter {
         dependencies.coordinator?.showLoading()
         dependencies.saveInteractor.saveToken().sink { [weak self] _ in
             self?.dependencies.coordinator?.hideLoading()
+            self?.dependencies.coordinator?.showHome()
         } receiveValue: { _ in }.store(in: &subscriptions)
     }
 }

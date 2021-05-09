@@ -14,6 +14,8 @@
 		84003E9F2647460800FC01B0 /* MerqueoData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84003E9D2647460800FC01B0 /* MerqueoData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84003EA32647465900FC01B0 /* SaveTokenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003EA22647465900FC01B0 /* SaveTokenInteractor.swift */; };
 		84003EA72647486E00FC01B0 /* SaveTokenInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003EA62647486E00FC01B0 /* SaveTokenInteractorType.swift */; };
+		84FA3DEC2647807900C2BB3A /* GetMoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DEB2647807900C2BB3A /* GetMoviesInteractor.swift */; };
+		84FA3DEF2647809C00C2BB3A /* GetMoviesInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DEE2647809C00C2BB3A /* GetMoviesInteractorType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		84003E9D2647460800FC01B0 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84003EA22647465900FC01B0 /* SaveTokenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTokenInteractor.swift; sourceTree = "<group>"; };
 		84003EA62647486E00FC01B0 /* SaveTokenInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTokenInteractorType.swift; sourceTree = "<group>"; };
+		84FA3DEB2647807900C2BB3A /* GetMoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoviesInteractor.swift; sourceTree = "<group>"; };
+		84FA3DEE2647809C00C2BB3A /* GetMoviesInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoviesInteractorType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				84003EA22647465900FC01B0 /* SaveTokenInteractor.swift */,
+				84FA3DEB2647807900C2BB3A /* GetMoviesInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				84003EA62647486E00FC01B0 /* SaveTokenInteractorType.swift */,
+				84FA3DEE2647809C00C2BB3A /* GetMoviesInteractorType.swift */,
 			);
 			path = InteractorType;
 			sourceTree = "<group>";
@@ -245,8 +251,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FA3DEF2647809C00C2BB3A /* GetMoviesInteractorType.swift in Sources */,
 				84003EA32647465900FC01B0 /* SaveTokenInteractor.swift in Sources */,
 				84003EA72647486E00FC01B0 /* SaveTokenInteractorType.swift in Sources */,
+				84FA3DEC2647807900C2BB3A /* GetMoviesInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

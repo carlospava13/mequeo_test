@@ -88,8 +88,8 @@ final class MainRouter: NSObject, RouterType {
         module.toPresent().dismiss(animated: animated , completion: nil)
     }
 
-    func setRootModule(_ module: Presentable) {
-        setRootModule(module, hideBar: false, animated: true)
+    func setRootModule(_ module: Presentable, animated: Bool) {
+        setRootModule(module, hideBar: false, animated: animated)
     }
 
     func setRootModule(
@@ -97,6 +97,7 @@ final class MainRouter: NSObject, RouterType {
         hideBar: Bool, animated: Bool = false) {
         completions.forEach { $0.value() }
         navigationController.setViewControllers([module.toPresent()], animated: animated)
+        navigationController.navigationBar.isHidden = hideBar
     }
 
     func popView() {

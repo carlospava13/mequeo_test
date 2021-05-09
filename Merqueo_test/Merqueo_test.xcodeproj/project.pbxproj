@@ -35,6 +35,10 @@
 		8495BEC32646CE35005F4E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8495BEC12646CE35005F4E28 /* LaunchScreen.storyboard */; };
 		8495BECE2646CE35005F4E28 /* Merqueo_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BECD2646CE35005F4E28 /* Merqueo_testTests.swift */; };
 		8495BED92646CE35005F4E28 /* Merqueo_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BED82646CE35005F4E28 /* Merqueo_testUITests.swift */; };
+		84FA3DC42647721700C2BB3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DC32647721700C2BB3A /* HomeViewController.swift */; };
+		84FA3DCA264772CC00C2BB3A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DC9264772CC00C2BB3A /* HomePresenter.swift */; };
+		84FA3DCE264772E200C2BB3A /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DCD264772E200C2BB3A /* HomeContract.swift */; };
+		84FA3DD2264773CE00C2BB3A /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DD1264773CE00C2BB3A /* HomeCoordinator.swift */; };
 		EAD6EA67632C1953EF6E89FA /* Pods_Merqueo_test_Merqueo_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189F6D1B5A1F2A60EC5E71DC /* Pods_Merqueo_test_Merqueo_testUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +110,10 @@
 		8495BED42646CE35005F4E28 /* Merqueo_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Merqueo_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8495BED82646CE35005F4E28 /* Merqueo_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merqueo_testUITests.swift; sourceTree = "<group>"; };
 		8495BEDA2646CE35005F4E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FA3DC32647721700C2BB3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		84FA3DC9264772CC00C2BB3A /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		84FA3DCD264772E200C2BB3A /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		84FA3DD1264773CE00C2BB3A /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		9B1E70E318DD45FE98B973B2 /* Pods-Merqueo_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_test.release.xcconfig"; path = "Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test.release.xcconfig"; sourceTree = "<group>"; };
 		AD4426C9471EA0B674AAD73A /* Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig"; path = "Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B88155FB9A3B8E3BA0137AD2 /* Pods-Merqueo_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_testTests.debug.xcconfig"; path = "Target Support Files/Pods-Merqueo_testTests/Pods-Merqueo_testTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +219,7 @@
 		8495BEB22646CE34005F4E28 /* Merqueo_test */ = {
 			isa = PBXGroup;
 			children = (
+				84FA3DC22647720900C2BB3A /* Home */,
 				84003E602646F68200FC01B0 /* Loading */,
 				84003E412646F31E00FC01B0 /* Base */,
 				84003E3A2646F2EB00FC01B0 /* Application */,
@@ -241,6 +250,17 @@
 				8495BEDA2646CE35005F4E28 /* Info.plist */,
 			);
 			path = Merqueo_testUITests;
+			sourceTree = "<group>";
+		};
+		84FA3DC22647720900C2BB3A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84FA3DC32647721700C2BB3A /* HomeViewController.swift */,
+				84FA3DC9264772CC00C2BB3A /* HomePresenter.swift */,
+				84FA3DCD264772E200C2BB3A /* HomeContract.swift */,
+				84FA3DD1264773CE00C2BB3A /* HomeCoordinator.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		933F6F50EDF3AC0F44F950F0 /* Pods */ = {
@@ -473,6 +493,9 @@
 			files = (
 				84003E572646F3B900FC01B0 /* ApplicationCoordinator.swift in Sources */,
 				84003E2F2646F24800FC01B0 /* RemoveReferenceDelegate.swift in Sources */,
+				84FA3DC42647721700C2BB3A /* HomeViewController.swift in Sources */,
+				84FA3DCE264772E200C2BB3A /* HomeContract.swift in Sources */,
+				84FA3DCA264772CC00C2BB3A /* HomePresenter.swift in Sources */,
 				84003E622646F69500FC01B0 /* LoadingViewController.swift in Sources */,
 				84003E532646F39F00FC01B0 /* ApplicationPresenter.swift in Sources */,
 				84003E212646F20500FC01B0 /* BaseCoordinator.swift in Sources */,
@@ -489,6 +512,7 @@
 				84003E2B2646F23000FC01B0 /* Presentable.swift in Sources */,
 				84003E332646F25B00FC01B0 /* MainRouter.swift in Sources */,
 				84003E3C2646F2F800FC01B0 /* ApplicationViewController.swift in Sources */,
+				84FA3DD2264773CE00C2BB3A /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
