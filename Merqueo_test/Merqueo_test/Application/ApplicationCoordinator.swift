@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import MerqueoCore
+import MerqueoData
 
 protocol ApplicationCoordinatorDelegate: AnyObject {
     func showLoading()
@@ -13,14 +15,22 @@ protocol ApplicationCoordinatorDelegate: AnyObject {
 }
 
 final class ApplicationCoordinator: BaseCoordinator {
-    
     private lazy var loadindCoordinator: LoadingCoordinator? = {
         LoadingCoordinator(router: router)
     }()
 
     override func start() {
         let applicationViewController = ApplicationViewController()
-        let dependencies = ApplicationPresenter.InputDependencies(coordinator: self)
+        let apiClient = ApiClient()
+        let dataStorage = DataStorage()
+        let getTokenRepository = GetTokenRepository(service: apiClient)
+        let saveTokenRepository = SaveTokenRepository(dataStorage: dataStorage)
+        let saveTokenInteractor = SaveTokenInteractor(
+            getTokenRepository: getTokenRepository,
+            saveTokenRepository: saveTokenRepository)
+        let dependencies = ApplicationPresenter.InputDependencies(
+            coordinator: self,
+            saveInteractor: saveTokenInteractor)
         let presenter = ApplicationPresenter(dependencies: dependencies)
         applicationViewController.presenter = presenter
         router.setRootModule(applicationViewController.toPresent())
@@ -35,10 +45,14 @@ extension ApplicationCoordinator: RemoveReferenceDelegate {
 
 extension ApplicationCoordinator: ApplicationCoordinatorDelegate {
     func showLoading() {
-        loadindCoordinator?.start()
+        DispatchQueue.main.async {
+            self.loadindCoordinator?.start()
+        }
     }
-    
+
     func hideLoading() {
-        loadindCoordinator?.dismiss()
+        DispatchQueue.main.async {
+            self.loadindCoordinator?.dismiss()
+        }
     }
 }

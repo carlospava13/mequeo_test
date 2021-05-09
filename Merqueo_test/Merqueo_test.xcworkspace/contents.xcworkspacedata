@@ -5,6 +5,9 @@
       location = "group:Merqueo_test.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:../MerqueoCore/MerqueoCore.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:../MerqueoData/MerqueoData.xcodeproj">
    </FileRef>
    <FileRef

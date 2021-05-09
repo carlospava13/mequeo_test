@@ -8,9 +8,9 @@
 import Foundation
 
 public struct TokenDto: Codable {
-    let success: Bool
-    let expiresAt: String
-    let requestToken: String
+    public let success: Bool
+    public let expiresAt: String
+    public let requestToken: String
     
     enum CodingKeys: String, CodingKey {
         case success = "success"

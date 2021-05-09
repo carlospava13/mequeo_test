@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import Combine
 
 class BasePresenter: BasePresenterType {
     
     weak var view: BaseViewType?
+    var subscriptions = Set<AnyCancellable>()
     
     func viewDidLoad() {
         // this method should be override
