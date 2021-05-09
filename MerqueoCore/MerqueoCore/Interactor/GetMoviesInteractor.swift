@@ -22,7 +22,4 @@ public final class GetMoviesInteractor: GetMoviesInteractorType {
             }
         }.eraseToAnyPublisher()
     }
-    public func getMovies() -> AnyPublisher<MovieResult, Error> {
-        repository.getMovies()
-    }
 }
