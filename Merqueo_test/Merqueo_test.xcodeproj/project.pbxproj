@@ -28,6 +28,10 @@
 		84003EAF26474AF800FC01B0 /* MerqueoCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EAD26474AF800FC01B0 /* MerqueoCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84003EB626474C8300FC01B0 /* MerqueoData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EB526474C8300FC01B0 /* MerqueoData.framework */; };
 		84003EB726474C8300FC01B0 /* MerqueoData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EB526474C8300FC01B0 /* MerqueoData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84121ABE2648929A00E55FEF /* GetMoviesInteractorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121ABD2648929A00E55FEF /* GetMoviesInteractorStub.swift */; };
+		84121AC42648952600E55FEF /* BaseInteractorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121AC32648952600E55FEF /* BaseInteractorStub.swift */; };
+		84121AC92648956C00E55FEF /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121AC82648956C00E55FEF /* TestError.swift */; };
+		84121AD9264898D600E55FEF /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121AD8264898D600E55FEF /* TestConstants.swift */; };
 		848FC2BB264828B50090D9C3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2BA264828B50090D9C3 /* HomeView.swift */; };
 		848FC2BF26482D5B0090D9C3 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */; };
 		848FC2C426482DAC0090D9C3 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2C326482DAC0090D9C3 /* CollectionDataSource.swift */; };
@@ -44,6 +48,8 @@
 		8495BEC32646CE35005F4E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8495BEC12646CE35005F4E28 /* LaunchScreen.storyboard */; };
 		8495BECE2646CE35005F4E28 /* Merqueo_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BECD2646CE35005F4E28 /* Merqueo_testTests.swift */; };
 		8495BED92646CE35005F4E28 /* Merqueo_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BED82646CE35005F4E28 /* Merqueo_testUITests.swift */; };
+		84E739162648902400ACAE52 /* HomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E739152648902400ACAE52 /* HomePresenterTest.swift */; };
+		84E7391D264890A000ACAE52 /* HomeViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7391C264890A000ACAE52 /* HomeViewSpy.swift */; };
 		84FA3DC42647721700C2BB3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DC32647721700C2BB3A /* HomeViewController.swift */; };
 		84FA3DCA264772CC00C2BB3A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DC9264772CC00C2BB3A /* HomePresenter.swift */; };
 		84FA3DCE264772E200C2BB3A /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DCD264772E200C2BB3A /* HomeContract.swift */; };
@@ -105,6 +111,10 @@
 		84003E672646F77900FC01B0 /* LoadingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCoordinator.swift; sourceTree = "<group>"; };
 		84003EAD26474AF800FC01B0 /* MerqueoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84003EB526474C8300FC01B0 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84121ABD2648929A00E55FEF /* GetMoviesInteractorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoviesInteractorStub.swift; sourceTree = "<group>"; };
+		84121AC32648952600E55FEF /* BaseInteractorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorStub.swift; sourceTree = "<group>"; };
+		84121AC82648956C00E55FEF /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		84121AD8264898D600E55FEF /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
 		842F27E92646DE5200C531B1 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		848FC2BA264828B50090D9C3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
@@ -128,6 +138,8 @@
 		8495BED42646CE35005F4E28 /* Merqueo_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Merqueo_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8495BED82646CE35005F4E28 /* Merqueo_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merqueo_testUITests.swift; sourceTree = "<group>"; };
 		8495BEDA2646CE35005F4E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E739152648902400ACAE52 /* HomePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTest.swift; sourceTree = "<group>"; };
+		84E7391C264890A000ACAE52 /* HomeViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewSpy.swift; sourceTree = "<group>"; };
 		84FA3DC32647721700C2BB3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		84FA3DC9264772CC00C2BB3A /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		84FA3DCD264772E200C2BB3A /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
@@ -213,6 +225,31 @@
 			path = Loading;
 			sourceTree = "<group>";
 		};
+		84121ABC2648928700E55FEF /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				84121ABD2648929A00E55FEF /* GetMoviesInteractorStub.swift */,
+				84121AC32648952600E55FEF /* BaseInteractorStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		84121AC72648955E00E55FEF /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				84121AC82648956C00E55FEF /* TestError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		84121AD7264898C500E55FEF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84121AD8264898D600E55FEF /* TestConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		848FC2C226482D940090D9C3 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +313,10 @@
 		8495BECC2646CE35005F4E28 /* Merqueo_testTests */ = {
 			isa = PBXGroup;
 			children = (
+				84121AD7264898C500E55FEF /* Constants */,
+				84121AC72648955E00E55FEF /* Errors */,
+				84121ABC2648928700E55FEF /* Stubs */,
+				84E739142648900600ACAE52 /* Presenters */,
 				8495BECD2646CE35005F4E28 /* Merqueo_testTests.swift */,
 				8495BECF2646CE35005F4E28 /* Info.plist */,
 			);
@@ -289,6 +330,23 @@
 				8495BEDA2646CE35005F4E28 /* Info.plist */,
 			);
 			path = Merqueo_testUITests;
+			sourceTree = "<group>";
+		};
+		84E739142648900600ACAE52 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				84E7391B2648908900ACAE52 /* Home */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		84E7391B2648908900ACAE52 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84E739152648902400ACAE52 /* HomePresenterTest.swift */,
+				84E7391C264890A000ACAE52 /* HomeViewSpy.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		84FA3DC22647720900C2BB3A /* Home */ = {
@@ -608,7 +666,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84121AC92648956C00E55FEF /* TestError.swift in Sources */,
+				84121AD9264898D600E55FEF /* TestConstants.swift in Sources */,
+				84121ABE2648929A00E55FEF /* GetMoviesInteractorStub.swift in Sources */,
+				84121AC42648952600E55FEF /* BaseInteractorStub.swift in Sources */,
+				84E7391D264890A000ACAE52 /* HomeViewSpy.swift in Sources */,
 				8495BECE2646CE35005F4E28 /* Merqueo_testTests.swift in Sources */,
+				84E739162648902400ACAE52 /* HomePresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
