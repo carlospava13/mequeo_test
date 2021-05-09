@@ -7,11 +7,21 @@
 
 import UIKit
 
+protocol BaseCoordinatorType: AnyObject {
+    func showLoading()
+    func hideLoading()
+}
+
 class BaseCoordinator: CoordinatorType {
     
     var childCoordinators: [CoordinatorType] = []
     var router: RouterType
     weak var removeReferenceDelegete: RemoveReferenceDelegate?
+    
+    private lazy var loadindCoordinator: LoadingCoordinator? = {
+        LoadingCoordinator(router: router)
+    }()
+    
     
     init(router: RouterType) {
         self.router = router
@@ -39,5 +49,19 @@ class BaseCoordinator: CoordinatorType {
         let viewController = router.toPresent()
         viewController.modalPresentationStyle = .overFullScreen
         return viewController
+    }
+}
+
+extension BaseCoordinator: BaseCoordinatorType {
+    func showLoading() {
+        DispatchQueue.main.async {
+            self.loadindCoordinator?.start()
+        }
+    }
+
+    func hideLoading() {
+        DispatchQueue.main.async {
+            self.loadindCoordinator?.dismiss()
+        }
     }
 }

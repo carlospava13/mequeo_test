@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,8 +24,19 @@
 		84003E572646F3B900FC01B0 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E562646F3B900FC01B0 /* ApplicationCoordinator.swift */; };
 		84003E622646F69500FC01B0 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E612646F69500FC01B0 /* LoadingViewController.swift */; };
 		84003E682646F77900FC01B0 /* LoadingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E672646F77900FC01B0 /* LoadingCoordinator.swift */; };
-		842F27EA2646DE5200C531B1 /* MerqueoData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842F27E92646DE5200C531B1 /* MerqueoData.framework */; };
-		842F27EB2646DE5200C531B1 /* MerqueoData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 842F27E92646DE5200C531B1 /* MerqueoData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84003EAE26474AF800FC01B0 /* MerqueoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EAD26474AF800FC01B0 /* MerqueoCore.framework */; };
+		84003EAF26474AF800FC01B0 /* MerqueoCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EAD26474AF800FC01B0 /* MerqueoCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84003EB626474C8300FC01B0 /* MerqueoData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EB526474C8300FC01B0 /* MerqueoData.framework */; };
+		84003EB726474C8300FC01B0 /* MerqueoData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EB526474C8300FC01B0 /* MerqueoData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		848FC2BB264828B50090D9C3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2BA264828B50090D9C3 /* HomeView.swift */; };
+		848FC2BF26482D5B0090D9C3 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */; };
+		848FC2C426482DAC0090D9C3 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2C326482DAC0090D9C3 /* CollectionDataSource.swift */; };
+		848FC2CA26482E7C0090D9C3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2C926482E7C0090D9C3 /* CollectionViewCell.swift */; };
+		848FC2CE26482EC60090D9C3 /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2CD26482EC60090D9C3 /* ObjectView.swift */; };
+		848FC2D22648359A0090D9C3 /* CollectionViewHorizontalCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2D12648359A0090D9C3 /* CollectionViewHorizontalCustom.swift */; };
+		848FC2D6264837B90090D9C3 /* MovieObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2D5264837B90090D9C3 /* MovieObjectView.swift */; };
+		848FC2DA264837F50090D9C3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2D9264837F50090D9C3 /* MovieCell.swift */; };
+		848FC30926488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC30826488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift */; };
 		8495BEB42646CE34005F4E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEB32646CE34005F4E28 /* AppDelegate.swift */; };
 		8495BEB62646CE34005F4E28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEB52646CE34005F4E28 /* SceneDelegate.swift */; };
 		8495BEBE2646CE34005F4E28 /* Merqueo_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEBC2646CE34005F4E28 /* Merqueo_test.xcdatamodeld */; };
@@ -33,6 +44,10 @@
 		8495BEC32646CE35005F4E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8495BEC12646CE35005F4E28 /* LaunchScreen.storyboard */; };
 		8495BECE2646CE35005F4E28 /* Merqueo_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BECD2646CE35005F4E28 /* Merqueo_testTests.swift */; };
 		8495BED92646CE35005F4E28 /* Merqueo_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BED82646CE35005F4E28 /* Merqueo_testUITests.swift */; };
+		84FA3DC42647721700C2BB3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DC32647721700C2BB3A /* HomeViewController.swift */; };
+		84FA3DCA264772CC00C2BB3A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DC9264772CC00C2BB3A /* HomePresenter.swift */; };
+		84FA3DCE264772E200C2BB3A /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DCD264772E200C2BB3A /* HomeContract.swift */; };
+		84FA3DD2264773CE00C2BB3A /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DD1264773CE00C2BB3A /* HomeCoordinator.swift */; };
 		EAD6EA67632C1953EF6E89FA /* Pods_Merqueo_test_Merqueo_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189F6D1B5A1F2A60EC5E71DC /* Pods_Merqueo_test_Merqueo_testUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,13 +69,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		842F27EC2646DE5200C531B1 /* Embed Frameworks */ = {
+		84003EB026474AF800FC01B0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				842F27EB2646DE5200C531B1 /* MerqueoData.framework in Embed Frameworks */,
+				84003EAF26474AF800FC01B0 /* MerqueoCore.framework in Embed Frameworks */,
+				84003EB726474C8300FC01B0 /* MerqueoData.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +103,18 @@
 		84003E562646F3B900FC01B0 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		84003E612646F69500FC01B0 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		84003E672646F77900FC01B0 /* LoadingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCoordinator.swift; sourceTree = "<group>"; };
+		84003EAD26474AF800FC01B0 /* MerqueoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84003EB526474C8300FC01B0 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		842F27E92646DE5200C531B1 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		848FC2BA264828B50090D9C3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
+		848FC2C326482DAC0090D9C3 /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		848FC2C926482E7C0090D9C3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		848FC2CD26482EC60090D9C3 /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
+		848FC2D12648359A0090D9C3 /* CollectionViewHorizontalCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHorizontalCustom.swift; sourceTree = "<group>"; };
+		848FC2D5264837B90090D9C3 /* MovieObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieObjectView.swift; sourceTree = "<group>"; };
+		848FC2D9264837F50090D9C3 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		848FC30826488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController +NavigationBarColor.swift"; sourceTree = "<group>"; };
 		8495BEB02646CE34005F4E28 /* Merqueo_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Merqueo_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8495BEB32646CE34005F4E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8495BEB52646CE34005F4E28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +128,10 @@
 		8495BED42646CE35005F4E28 /* Merqueo_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Merqueo_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8495BED82646CE35005F4E28 /* Merqueo_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merqueo_testUITests.swift; sourceTree = "<group>"; };
 		8495BEDA2646CE35005F4E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FA3DC32647721700C2BB3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		84FA3DC9264772CC00C2BB3A /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		84FA3DCD264772E200C2BB3A /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		84FA3DD1264773CE00C2BB3A /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		9B1E70E318DD45FE98B973B2 /* Pods-Merqueo_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_test.release.xcconfig"; path = "Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test.release.xcconfig"; sourceTree = "<group>"; };
 		AD4426C9471EA0B674AAD73A /* Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig"; path = "Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B88155FB9A3B8E3BA0137AD2 /* Pods-Merqueo_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_testTests.debug.xcconfig"; path = "Target Support Files/Pods-Merqueo_testTests/Pods-Merqueo_testTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,8 +144,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84003EAE26474AF800FC01B0 /* MerqueoCore.framework in Frameworks */,
 				1AC7A9838B305CB3042E07F5 /* Pods_Merqueo_test.framework in Frameworks */,
-				842F27EA2646DE5200C531B1 /* MerqueoData.framework in Frameworks */,
+				84003EB626474C8300FC01B0 /* MerqueoData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +196,7 @@
 		84003E412646F31E00FC01B0 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				848FC2C226482D940090D9C3 /* Collection */,
 				84003E422646F32700FC01B0 /* BaseViewController.swift */,
 				84003E462646F33D00FC01B0 /* BasePresenter.swift */,
 				84003E4A2646F35500FC01B0 /* BaseContract.swift */,
@@ -178,6 +211,25 @@
 				84003E672646F77900FC01B0 /* LoadingCoordinator.swift */,
 			);
 			path = Loading;
+			sourceTree = "<group>";
+		};
+		848FC2C226482D940090D9C3 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				848FC2C326482DAC0090D9C3 /* CollectionDataSource.swift */,
+				848FC2C926482E7C0090D9C3 /* CollectionViewCell.swift */,
+				848FC2CD26482EC60090D9C3 /* ObjectView.swift */,
+				848FC2D12648359A0090D9C3 /* CollectionViewHorizontalCustom.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		848FC30726488CDA0090D9C3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				848FC30826488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		8495BEA72646CE34005F4E28 = {
@@ -205,6 +257,8 @@
 		8495BEB22646CE34005F4E28 /* Merqueo_test */ = {
 			isa = PBXGroup;
 			children = (
+				848FC30726488CDA0090D9C3 /* Extension */,
+				84FA3DC22647720900C2BB3A /* Home */,
 				84003E602646F68200FC01B0 /* Loading */,
 				84003E412646F31E00FC01B0 /* Base */,
 				84003E3A2646F2EB00FC01B0 /* Application */,
@@ -237,6 +291,21 @@
 			path = Merqueo_testUITests;
 			sourceTree = "<group>";
 		};
+		84FA3DC22647720900C2BB3A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84FA3DC32647721700C2BB3A /* HomeViewController.swift */,
+				84FA3DC9264772CC00C2BB3A /* HomePresenter.swift */,
+				84FA3DCD264772E200C2BB3A /* HomeContract.swift */,
+				84FA3DD1264773CE00C2BB3A /* HomeCoordinator.swift */,
+				848FC2BA264828B50090D9C3 /* HomeView.swift */,
+				848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */,
+				848FC2D5264837B90090D9C3 /* MovieObjectView.swift */,
+				848FC2D9264837F50090D9C3 /* MovieCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		933F6F50EDF3AC0F44F950F0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +322,8 @@
 		D1FADD44869103F8639EDBEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84003EB526474C8300FC01B0 /* MerqueoData.framework */,
+				84003EAD26474AF800FC01B0 /* MerqueoCore.framework */,
 				842F27E92646DE5200C531B1 /* MerqueoData.framework */,
 				EA427D9AD20ED87B03775F41 /* Pods_Merqueo_test.framework */,
 				189F6D1B5A1F2A60EC5E71DC /* Pods_Merqueo_test_Merqueo_testUITests.framework */,
@@ -272,7 +343,8 @@
 				8495BEAC2646CE34005F4E28 /* Sources */,
 				8495BEAD2646CE34005F4E28 /* Frameworks */,
 				8495BEAE2646CE34005F4E28 /* Resources */,
-				842F27EC2646DE5200C531B1 /* Embed Frameworks */,
+				84003EB026474AF800FC01B0 /* Embed Frameworks */,
+				D61CB1ED445CD4947393EEB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,6 +382,7 @@
 				8495BED02646CE35005F4E28 /* Sources */,
 				8495BED12646CE35005F4E28 /* Frameworks */,
 				8495BED22646CE35005F4E28 /* Resources */,
+				C6C4BF5C364D07F24F631584 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -412,6 +485,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C6C4BF5C364D07F24F631584 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D177B1F0335B34F0A22662AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,6 +522,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D61CB1ED445CD4947393EEB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7481B52719E843147B67981 /* [CP] Check Pods Manifest.lock */ = {
@@ -465,9 +572,16 @@
 			files = (
 				84003E572646F3B900FC01B0 /* ApplicationCoordinator.swift in Sources */,
 				84003E2F2646F24800FC01B0 /* RemoveReferenceDelegate.swift in Sources */,
+				84FA3DC42647721700C2BB3A /* HomeViewController.swift in Sources */,
+				84FA3DCE264772E200C2BB3A /* HomeContract.swift in Sources */,
+				84FA3DCA264772CC00C2BB3A /* HomePresenter.swift in Sources */,
 				84003E622646F69500FC01B0 /* LoadingViewController.swift in Sources */,
 				84003E532646F39F00FC01B0 /* ApplicationPresenter.swift in Sources */,
+				848FC2D22648359A0090D9C3 /* CollectionViewHorizontalCustom.swift in Sources */,
+				848FC2DA264837F50090D9C3 /* MovieCell.swift in Sources */,
 				84003E212646F20500FC01B0 /* BaseCoordinator.swift in Sources */,
+				848FC2D6264837B90090D9C3 /* MovieObjectView.swift in Sources */,
+				848FC2CA26482E7C0090D9C3 /* CollectionViewCell.swift in Sources */,
 				84003E4B2646F35500FC01B0 /* BaseContract.swift in Sources */,
 				84003E372646F27600FC01B0 /* RouterType.swift in Sources */,
 				84003E682646F77900FC01B0 /* LoadingCoordinator.swift in Sources */,
@@ -475,12 +589,18 @@
 				84003E432646F32700FC01B0 /* BaseViewController.swift in Sources */,
 				8495BEB42646CE34005F4E28 /* AppDelegate.swift in Sources */,
 				84003E4F2646F38B00FC01B0 /* ApplicationContract.swift in Sources */,
+				848FC2CE26482EC60090D9C3 /* ObjectView.swift in Sources */,
 				8495BEBE2646CE34005F4E28 /* Merqueo_test.xcdatamodeld in Sources */,
 				84003E472646F33D00FC01B0 /* BasePresenter.swift in Sources */,
 				8495BEB62646CE34005F4E28 /* SceneDelegate.swift in Sources */,
 				84003E2B2646F23000FC01B0 /* Presentable.swift in Sources */,
+				848FC2BF26482D5B0090D9C3 /* HomeDataSource.swift in Sources */,
 				84003E332646F25B00FC01B0 /* MainRouter.swift in Sources */,
 				84003E3C2646F2F800FC01B0 /* ApplicationViewController.swift in Sources */,
+				848FC2BB264828B50090D9C3 /* HomeView.swift in Sources */,
+				84FA3DD2264773CE00C2BB3A /* HomeCoordinator.swift in Sources */,
+				848FC2C426482DAC0090D9C3 /* CollectionDataSource.swift in Sources */,
+				848FC30926488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

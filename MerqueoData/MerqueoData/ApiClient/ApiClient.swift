@@ -23,6 +23,7 @@ public final class ApiClient: ApiClientType {
 
                 return $0.data
             }
+            .print()
             .decode(type: T.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }

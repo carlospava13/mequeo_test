@@ -6,24 +6,36 @@
 //
 
 import Foundation
+import MerqueoCore
+import MerqueoData
 
-protocol ApplicationCoordinatorDelegate: AnyObject {
-    func showLoading()
-    func hideLoading()
+protocol ApplicationCoordinatorDelegate: BaseCoordinatorType {
+    func showHome()
 }
 
 final class ApplicationCoordinator: BaseCoordinator {
-    
-    private lazy var loadindCoordinator: LoadingCoordinator? = {
-        LoadingCoordinator(router: router)
+
+    private lazy var homeCoordinator: HomeCoordinator = {
+        HomeCoordinator(router: router)
     }()
 
     override func start() {
         let applicationViewController = ApplicationViewController()
-        let dependencies = ApplicationPresenter.InputDependencies(coordinator: self)
+        let apiClient = ApiClient()
+        let dataStorage = DataStorage()
+        let getTokenRepository = GetTokenRepository(service: apiClient)
+        let saveTokenRepository = SaveTokenRepository(dataStorage: dataStorage)
+        let saveTokenInteractor = SaveTokenInteractor(
+            getTokenRepository: getTokenRepository,
+            saveTokenRepository: saveTokenRepository)
+        let dependencies = ApplicationPresenter.InputDependencies(
+            coordinator: self,
+            saveInteractor: saveTokenInteractor)
         let presenter = ApplicationPresenter(dependencies: dependencies)
         applicationViewController.presenter = presenter
-        router.setRootModule(applicationViewController.toPresent())
+        router.setRootModule(applicationViewController.toPresent(),
+                             hideBar: true,
+                             animated: false)
     }
 }
 
@@ -34,11 +46,9 @@ extension ApplicationCoordinator: RemoveReferenceDelegate {
 }
 
 extension ApplicationCoordinator: ApplicationCoordinatorDelegate {
-    func showLoading() {
-        loadindCoordinator?.start()
-    }
-    
-    func hideLoading() {
-        loadindCoordinator?.dismiss()
+    func showHome() {
+        DispatchQueue.main.async {
+            self.homeCoordinator.start()
+        }
     }
 }
