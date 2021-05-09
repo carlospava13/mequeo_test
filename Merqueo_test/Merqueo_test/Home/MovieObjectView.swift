@@ -9,4 +9,5 @@ import Foundation
 
 struct MovieObjectView: ObjectView {
     let title: String
+    let posterPath: String
 }

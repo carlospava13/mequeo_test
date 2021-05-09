@@ -11,7 +11,7 @@ final class HomeView: UIView {
     
     private lazy var collectionView: UICollectionView = {
         let flow = CollectionViewHorizontalCustom()
-        flow.height = 50
+        flow.height = 175
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flow)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.register(MovieCell.self,
@@ -39,10 +39,10 @@ final class HomeView: UIView {
         addSubview(collectionView)
         let guides = safeAreaLayoutGuide
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: guides.topAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: guides.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: guides.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: guides.bottomAnchor)
+            collectionView.topAnchor.constraint(equalTo: guides.topAnchor, constant: 4),
+            collectionView.leadingAnchor.constraint(equalTo: guides.leadingAnchor, constant: 4),
+            collectionView.trailingAnchor.constraint(equalTo: guides.trailingAnchor, constant: -4),
+            collectionView.bottomAnchor.constraint(equalTo: guides.bottomAnchor, constant: -4)
         ])
     }
     

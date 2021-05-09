@@ -18,7 +18,8 @@ public final class GetMoviesInteractor: GetMoviesInteractorType {
     public func getMovies() -> AnyPublisher<[MovieCoreDto], Error> {
         repository.getMovies().map { (result) -> [MovieCoreDto] in
             result.results.map { (movieDto) -> MovieCoreDto in
-                MovieCoreDto(title: movieDto.title)
+                MovieCoreDto(title: movieDto.title,
+                             posterPath: movieDto.posterPath)
             }
         }.eraseToAnyPublisher()
     }

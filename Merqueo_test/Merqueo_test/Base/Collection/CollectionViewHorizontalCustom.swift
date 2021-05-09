@@ -15,11 +15,11 @@ class CollectionViewHorizontalCustom: UICollectionViewFlowLayout {
     }
 
     func configLayout() {
-        minimumLineSpacing = 0
-        minimumInteritemSpacing = 0
+        minimumLineSpacing = 4
+        minimumInteritemSpacing = 4
         scrollDirection = .vertical
         if let collectionView = collectionView {
-            let optimisedWidth = (collectionView.frame.width - minimumInteritemSpacing) / 2
+            let optimisedWidth = (collectionView.frame.width - minimumInteritemSpacing) / 3 - 4
             itemSize = CGSize(width: optimisedWidth, height: height)
         }
     }

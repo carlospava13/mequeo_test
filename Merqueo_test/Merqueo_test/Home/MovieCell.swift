@@ -6,36 +6,39 @@
 //
 
 import UIKit
-
+import SDWebImage
 final class MovieCell: CollectionViewCell<MovieObjectView> {
-    private lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.numberOfLines = 0
-        label.textColor = .white
-        return label
+    private let imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleToFill
+        return imageView
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         setTitleLabelConstraints()
     }
-    
+
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private func setTitleLabelConstraints() {
-        contentView.addSubview(titleLabel)
+        contentView.addSubview(imageView)
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+            imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
     }
-    
+
     override func set(data: MovieObjectView) {
-        titleLabel.text = data.title
+        guard let url = URL(string: "https://image.tmdb.org/t/p/w500" + data.posterPath) else {
+            return
+        }
+        imageView.sd_setImage(with: url) { (_, _, _, _) in }
     }
 }

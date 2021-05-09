@@ -4,7 +4,7 @@
 target 'Merqueo_test' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  pod 'SDWebImage', '~> 5.0'
   # Pods for Merqueo_test
 
   target 'Merqueo_testTests' do

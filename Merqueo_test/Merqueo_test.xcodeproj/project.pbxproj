@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,6 +36,7 @@
 		848FC2D22648359A0090D9C3 /* CollectionViewHorizontalCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2D12648359A0090D9C3 /* CollectionViewHorizontalCustom.swift */; };
 		848FC2D6264837B90090D9C3 /* MovieObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2D5264837B90090D9C3 /* MovieObjectView.swift */; };
 		848FC2DA264837F50090D9C3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2D9264837F50090D9C3 /* MovieCell.swift */; };
+		848FC30926488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC30826488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift */; };
 		8495BEB42646CE34005F4E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEB32646CE34005F4E28 /* AppDelegate.swift */; };
 		8495BEB62646CE34005F4E28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEB52646CE34005F4E28 /* SceneDelegate.swift */; };
 		8495BEBE2646CE34005F4E28 /* Merqueo_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEBC2646CE34005F4E28 /* Merqueo_test.xcdatamodeld */; };
@@ -113,6 +114,7 @@
 		848FC2D12648359A0090D9C3 /* CollectionViewHorizontalCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHorizontalCustom.swift; sourceTree = "<group>"; };
 		848FC2D5264837B90090D9C3 /* MovieObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieObjectView.swift; sourceTree = "<group>"; };
 		848FC2D9264837F50090D9C3 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		848FC30826488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController +NavigationBarColor.swift"; sourceTree = "<group>"; };
 		8495BEB02646CE34005F4E28 /* Merqueo_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Merqueo_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8495BEB32646CE34005F4E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8495BEB52646CE34005F4E28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -222,6 +224,14 @@
 			path = Collection;
 			sourceTree = "<group>";
 		};
+		848FC30726488CDA0090D9C3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				848FC30826488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		8495BEA72646CE34005F4E28 = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +257,7 @@
 		8495BEB22646CE34005F4E28 /* Merqueo_test */ = {
 			isa = PBXGroup;
 			children = (
+				848FC30726488CDA0090D9C3 /* Extension */,
 				84FA3DC22647720900C2BB3A /* Home */,
 				84003E602646F68200FC01B0 /* Loading */,
 				84003E412646F31E00FC01B0 /* Base */,
@@ -333,6 +344,7 @@
 				8495BEAD2646CE34005F4E28 /* Frameworks */,
 				8495BEAE2646CE34005F4E28 /* Resources */,
 				84003EB026474AF800FC01B0 /* Embed Frameworks */,
+				D61CB1ED445CD4947393EEB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -370,6 +382,7 @@
 				8495BED02646CE35005F4E28 /* Sources */,
 				8495BED12646CE35005F4E28 /* Frameworks */,
 				8495BED22646CE35005F4E28 /* Resources */,
+				C6C4BF5C364D07F24F631584 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -472,6 +485,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C6C4BF5C364D07F24F631584 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D177B1F0335B34F0A22662AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -492,6 +522,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D61CB1ED445CD4947393EEB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7481B52719E843147B67981 /* [CP] Check Pods Manifest.lock */ = {
@@ -553,6 +600,7 @@
 				848FC2BB264828B50090D9C3 /* HomeView.swift in Sources */,
 				84FA3DD2264773CE00C2BB3A /* HomeCoordinator.swift in Sources */,
 				848FC2C426482DAC0090D9C3 /* CollectionDataSource.swift in Sources */,
+				848FC30926488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

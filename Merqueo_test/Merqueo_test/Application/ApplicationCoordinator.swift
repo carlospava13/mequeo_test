@@ -9,17 +9,12 @@ import Foundation
 import MerqueoCore
 import MerqueoData
 
-protocol ApplicationCoordinatorDelegate: AnyObject {
-    func showLoading()
-    func hideLoading()
+protocol ApplicationCoordinatorDelegate: BaseCoordinatorType {
     func showHome()
 }
 
 final class ApplicationCoordinator: BaseCoordinator {
-    private lazy var loadindCoordinator: LoadingCoordinator? = {
-        LoadingCoordinator(router: router)
-    }()
-    
+
     private lazy var homeCoordinator: HomeCoordinator = {
         HomeCoordinator(router: router)
     }()
@@ -51,18 +46,6 @@ extension ApplicationCoordinator: RemoveReferenceDelegate {
 }
 
 extension ApplicationCoordinator: ApplicationCoordinatorDelegate {
-    func showLoading() {
-        DispatchQueue.main.async {
-            self.loadindCoordinator?.start()
-        }
-    }
-
-    func hideLoading() {
-        DispatchQueue.main.async {
-            self.loadindCoordinator?.dismiss()
-        }
-    }
-    
     func showHome() {
         DispatchQueue.main.async {
             self.homeCoordinator.start()

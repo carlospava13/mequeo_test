@@ -6,8 +6,10 @@
 //
 
 import Foundation
-import MerqueoData
 import MerqueoCore
+import MerqueoData
+
+protocol HomeCoordinatorDelegate: BaseCoordinatorType {}
 
 final class HomeCoordinator: BaseCoordinator {
     override func start() {
@@ -17,7 +19,10 @@ final class HomeCoordinator: BaseCoordinator {
         let getMovieInteractor = GetMoviesInteractor(repository: getMovieRepository)
         let dependencies = HomePresenter.InputDependencies(getMoviesInteractor: getMovieInteractor)
         homeViewController.presenter = HomePresenter(dependencies: dependencies)
-        router.setRootModule(homeViewController,
-                              animated: false)
+        router.setRootModule(
+            homeViewController,
+            animated: false)
     }
 }
+
+extension HomeCoordinator: HomeCoordinatorDelegate {}
