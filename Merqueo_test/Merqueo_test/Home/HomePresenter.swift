@@ -13,27 +13,38 @@ final class HomePresenter: BasePresenter {
         let getMoviesInteractor: GetMoviesInteractorType
     }
 
+    private var ownerView: HomeViewType! {
+        view as? HomeViewType
+    }
+
     private let dependencies: InputDependencies
-    
+
     init(dependencies: InputDependencies) {
         self.dependencies = dependencies
     }
-    
+
     override func viewDidLoad() {
         getMovies()
     }
-    
+
     private func getMovies() {
-        dependencies.getMoviesInteractor.getMovies().sink { (completion) in
+        dependencies.getMoviesInteractor.getMovies().sink { completion in
             switch completion {
             case .failure(let error):
                 print(error)
             case .finished:
                 print("Finished")
             }
-        } receiveValue: { (movies) in
-            print(movies)
+        } receiveValue: { [weak self] movies in
+            self?.parseToObjectView(movies: movies)
         }.store(in: &subscriptions)
+    }
+
+    private func parseToObjectView(movies: [MovieCoreDto]) {
+        let movies = movies.map { (movieDto) -> MovieObjectView in
+            MovieObjectView(title: movieDto.title)
+        }
+        ownerView.set(movies: movies)
     }
 }
 

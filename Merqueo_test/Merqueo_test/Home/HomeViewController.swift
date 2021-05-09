@@ -9,13 +9,24 @@ import Foundation
 
 final class HomeViewController: BaseViewController {
     
+    private var homeView: HomeView = HomeView()
+    
+    override func loadView() {
+        view = homeView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        view.backgroundColor = .black
+        title = "Movies"
     }
     
 }
 
-extension HomeViewController: HomeView {
-    
+extension HomeViewController: HomeViewType {
+    func set(movies: [MovieObjectView]) {
+        DispatchQueue.main.async {
+            self.homeView.set(movies: movies)
+        }
+    }
 }

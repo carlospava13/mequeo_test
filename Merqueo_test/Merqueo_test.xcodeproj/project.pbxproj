@@ -28,6 +28,14 @@
 		84003EAF26474AF800FC01B0 /* MerqueoCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EAD26474AF800FC01B0 /* MerqueoCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84003EB626474C8300FC01B0 /* MerqueoData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EB526474C8300FC01B0 /* MerqueoData.framework */; };
 		84003EB726474C8300FC01B0 /* MerqueoData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EB526474C8300FC01B0 /* MerqueoData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		848FC2BB264828B50090D9C3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2BA264828B50090D9C3 /* HomeView.swift */; };
+		848FC2BF26482D5B0090D9C3 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */; };
+		848FC2C426482DAC0090D9C3 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2C326482DAC0090D9C3 /* CollectionDataSource.swift */; };
+		848FC2CA26482E7C0090D9C3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2C926482E7C0090D9C3 /* CollectionViewCell.swift */; };
+		848FC2CE26482EC60090D9C3 /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2CD26482EC60090D9C3 /* ObjectView.swift */; };
+		848FC2D22648359A0090D9C3 /* CollectionViewHorizontalCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2D12648359A0090D9C3 /* CollectionViewHorizontalCustom.swift */; };
+		848FC2D6264837B90090D9C3 /* MovieObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2D5264837B90090D9C3 /* MovieObjectView.swift */; };
+		848FC2DA264837F50090D9C3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2D9264837F50090D9C3 /* MovieCell.swift */; };
 		8495BEB42646CE34005F4E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEB32646CE34005F4E28 /* AppDelegate.swift */; };
 		8495BEB62646CE34005F4E28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEB52646CE34005F4E28 /* SceneDelegate.swift */; };
 		8495BEBE2646CE34005F4E28 /* Merqueo_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEBC2646CE34005F4E28 /* Merqueo_test.xcdatamodeld */; };
@@ -97,6 +105,14 @@
 		84003EAD26474AF800FC01B0 /* MerqueoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84003EB526474C8300FC01B0 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		842F27E92646DE5200C531B1 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		848FC2BA264828B50090D9C3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
+		848FC2C326482DAC0090D9C3 /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		848FC2C926482E7C0090D9C3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		848FC2CD26482EC60090D9C3 /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
+		848FC2D12648359A0090D9C3 /* CollectionViewHorizontalCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHorizontalCustom.swift; sourceTree = "<group>"; };
+		848FC2D5264837B90090D9C3 /* MovieObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieObjectView.swift; sourceTree = "<group>"; };
+		848FC2D9264837F50090D9C3 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		8495BEB02646CE34005F4E28 /* Merqueo_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Merqueo_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8495BEB32646CE34005F4E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8495BEB52646CE34005F4E28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +194,7 @@
 		84003E412646F31E00FC01B0 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				848FC2C226482D940090D9C3 /* Collection */,
 				84003E422646F32700FC01B0 /* BaseViewController.swift */,
 				84003E462646F33D00FC01B0 /* BasePresenter.swift */,
 				84003E4A2646F35500FC01B0 /* BaseContract.swift */,
@@ -192,6 +209,17 @@
 				84003E672646F77900FC01B0 /* LoadingCoordinator.swift */,
 			);
 			path = Loading;
+			sourceTree = "<group>";
+		};
+		848FC2C226482D940090D9C3 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				848FC2C326482DAC0090D9C3 /* CollectionDataSource.swift */,
+				848FC2C926482E7C0090D9C3 /* CollectionViewCell.swift */,
+				848FC2CD26482EC60090D9C3 /* ObjectView.swift */,
+				848FC2D12648359A0090D9C3 /* CollectionViewHorizontalCustom.swift */,
+			);
+			path = Collection;
 			sourceTree = "<group>";
 		};
 		8495BEA72646CE34005F4E28 = {
@@ -259,6 +287,10 @@
 				84FA3DC9264772CC00C2BB3A /* HomePresenter.swift */,
 				84FA3DCD264772E200C2BB3A /* HomeContract.swift */,
 				84FA3DD1264773CE00C2BB3A /* HomeCoordinator.swift */,
+				848FC2BA264828B50090D9C3 /* HomeView.swift */,
+				848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */,
+				848FC2D5264837B90090D9C3 /* MovieObjectView.swift */,
+				848FC2D9264837F50090D9C3 /* MovieCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -498,7 +530,11 @@
 				84FA3DCA264772CC00C2BB3A /* HomePresenter.swift in Sources */,
 				84003E622646F69500FC01B0 /* LoadingViewController.swift in Sources */,
 				84003E532646F39F00FC01B0 /* ApplicationPresenter.swift in Sources */,
+				848FC2D22648359A0090D9C3 /* CollectionViewHorizontalCustom.swift in Sources */,
+				848FC2DA264837F50090D9C3 /* MovieCell.swift in Sources */,
 				84003E212646F20500FC01B0 /* BaseCoordinator.swift in Sources */,
+				848FC2D6264837B90090D9C3 /* MovieObjectView.swift in Sources */,
+				848FC2CA26482E7C0090D9C3 /* CollectionViewCell.swift in Sources */,
 				84003E4B2646F35500FC01B0 /* BaseContract.swift in Sources */,
 				84003E372646F27600FC01B0 /* RouterType.swift in Sources */,
 				84003E682646F77900FC01B0 /* LoadingCoordinator.swift in Sources */,
@@ -506,13 +542,17 @@
 				84003E432646F32700FC01B0 /* BaseViewController.swift in Sources */,
 				8495BEB42646CE34005F4E28 /* AppDelegate.swift in Sources */,
 				84003E4F2646F38B00FC01B0 /* ApplicationContract.swift in Sources */,
+				848FC2CE26482EC60090D9C3 /* ObjectView.swift in Sources */,
 				8495BEBE2646CE34005F4E28 /* Merqueo_test.xcdatamodeld in Sources */,
 				84003E472646F33D00FC01B0 /* BasePresenter.swift in Sources */,
 				8495BEB62646CE34005F4E28 /* SceneDelegate.swift in Sources */,
 				84003E2B2646F23000FC01B0 /* Presentable.swift in Sources */,
+				848FC2BF26482D5B0090D9C3 /* HomeDataSource.swift in Sources */,
 				84003E332646F25B00FC01B0 /* MainRouter.swift in Sources */,
 				84003E3C2646F2F800FC01B0 /* ApplicationViewController.swift in Sources */,
+				848FC2BB264828B50090D9C3 /* HomeView.swift in Sources */,
 				84FA3DD2264773CE00C2BB3A /* HomeCoordinator.swift in Sources */,
+				848FC2C426482DAC0090D9C3 /* CollectionDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,6 @@ protocol HomePresenterType: BasePresenterType {
     
 }
 
-protocol HomeView: BaseViewType {
-    
+protocol HomeViewType: BaseViewType {
+    func set(movies: [MovieObjectView])
 }
