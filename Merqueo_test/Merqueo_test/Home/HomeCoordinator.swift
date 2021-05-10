@@ -17,7 +17,7 @@ final class HomeCoordinator: BaseCoordinator {
         let apiClient = ApiClient()
         let getMovieRepository = GetPopularMovieRepository(service: apiClient)
         let getMovieInteractor = GetMoviesInteractor(repository: getMovieRepository)
-        let dependencies = HomePresenter.InputDependencies(getMoviesInteractor: getMovieInteractor)
+        let dependencies = HomePresenter.InputDependencies(coordinator: self,getMoviesInteractor: getMovieInteractor)
         homeViewController.presenter = HomePresenter(dependencies: dependencies)
         router.setRootModule(
             homeViewController,

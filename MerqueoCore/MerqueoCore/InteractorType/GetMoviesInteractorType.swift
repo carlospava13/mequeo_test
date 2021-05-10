@@ -9,6 +9,5 @@ import Foundation
 import Combine
 import MerqueoData
 public protocol GetMoviesInteractorType {
-    init(repository: GetPopularMovieRepositoryType)
     func getMovies() -> AnyPublisher<[MovieCoreDto], Error>
 }

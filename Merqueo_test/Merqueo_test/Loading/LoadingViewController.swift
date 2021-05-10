@@ -19,7 +19,7 @@ final class LoadingViewController: UIViewController {
 
         setIndicationActivityViewConstraints()
         indicatorActivityView.startAnimating()
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
     }
 
     private func setIndicationActivityViewConstraints() {

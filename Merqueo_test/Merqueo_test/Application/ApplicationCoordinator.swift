@@ -39,12 +39,6 @@ final class ApplicationCoordinator: BaseCoordinator {
     }
 }
 
-extension ApplicationCoordinator: RemoveReferenceDelegate {
-    func removeReference(_: BaseCoordinator) {
-        removeDependency(self)
-    }
-}
-
 extension ApplicationCoordinator: ApplicationCoordinatorDelegate {
     func showHome() {
         DispatchQueue.main.async {
