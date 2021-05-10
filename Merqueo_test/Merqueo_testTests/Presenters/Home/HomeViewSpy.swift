@@ -22,12 +22,18 @@ class HomeCoordinatorSpy: HomeCoordinatorDelegate {
     init() {}
     var showLoadingCallBack: () -> Void = {}
     var hideLoadingCallBack: () -> Void = {}
+    var showErrorCallBack: () -> Void = {}
 
     func showLoading() {
         showLoadingCallBack()
     }
 
-    func hideLoading() {
+    func hideLoading(completion: (() -> Void)?) {
         hideLoadingCallBack()
+        completion?()
+    }
+
+    func showError(description: String) {
+        showErrorCallBack()
     }
 }

@@ -33,11 +33,13 @@ final class HomePresenter: BasePresenter {
         dependencies.getMoviesInteractor.getMovies().sink { [weak self] completion in
             switch completion {
             case .failure(let error):
-                print(error)
+                self?.dependencies.coordinator?.hideLoading(completion: {
+                    self?.dependencies.coordinator?.showError(description: error.localizedDescription)
+                })
             case .finished:
-                print("Finished")
+                self?.dependencies.coordinator?.hideLoading(completion: nil)
             }
-            self?.dependencies.coordinator?.hideLoading()
+            
         } receiveValue: { [weak self] movies in
             self?.parseToObjectView(movies: movies)
         }.store(in: &subscriptions)
@@ -45,8 +47,9 @@ final class HomePresenter: BasePresenter {
 
     private func parseToObjectView(movies: [MovieCoreDto]) {
         let movies = movies.map { (movieDto) -> MovieObjectView in
-            MovieObjectView(title: movieDto.title,
-                            posterPath: movieDto.posterPath)
+            MovieObjectView(
+                title: movieDto.title,
+                posterPath: movieDto.posterPath)
         }
         ownerView.set(movies: movies)
     }

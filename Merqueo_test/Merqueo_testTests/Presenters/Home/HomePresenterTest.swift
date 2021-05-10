@@ -84,4 +84,21 @@ class HomePresenterTest: XCTestCase {
         wait(for: [expectation], timeout: 1.0)
         XCTAssertTrue(valueExpected)
     }
+    
+    func testGetMovies_WhenReturnFailure_ThenCallShowError() {
+        // Given
+        let expectation = self.expectation(description: "get movies")
+        var valueExpected = false
+        // When
+        
+        homeCoordinatorSpy.showErrorCallBack = {
+            valueExpected = true
+            expectation.fulfill()
+        }
+
+        sut.viewDidLoad()
+        // Then
+        wait(for: [expectation], timeout: 1.0)
+        XCTAssertTrue(valueExpected)
+    }
 }

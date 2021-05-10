@@ -9,20 +9,27 @@ import UIKit
 
 protocol BaseCoordinatorType: AnyObject {
     func showLoading()
-    func hideLoading()
+    func hideLoading(completion: (() -> Void)?)
+    func showError(description: String)
 }
 
 class BaseCoordinator: CoordinatorType {
-    
     var childCoordinators: [CoordinatorType] = []
     var router: RouterType
     weak var removeReferenceDelegete: RemoveReferenceDelegate?
-    
+
     private lazy var loadindCoordinator: LoadingCoordinator? = {
-        LoadingCoordinator(router: router)
+        let coordinator = LoadingCoordinator(router: router)
+        coordinator.removeReferenceDelegete = self
+        return coordinator
     }()
-    
-    
+
+    private lazy var dialogCoordinator: DialogCoordinator? = {
+        let coordinator = DialogCoordinator(router: router, delegate: self)
+        coordinator.removeReferenceDelegete = self
+        return coordinator
+    }()
+
     init(router: RouterType) {
         self.router = router
     }
@@ -59,9 +66,29 @@ extension BaseCoordinator: BaseCoordinatorType {
         }
     }
 
-    func hideLoading() {
+    func hideLoading(completion: (() -> Void)?) {
         DispatchQueue.main.async {
-            self.loadindCoordinator?.dismiss()
+            self.loadindCoordinator?.dismiss(completion: completion)
         }
+    }
+
+    func showError(description: String) {
+        DispatchQueue.main.async {
+            self.dialogCoordinator?.start(description: description)
+        }
+    }
+}
+
+extension BaseCoordinator: DialogViewDelegate {
+    func tryAgain() {
+        DispatchQueue.main.async {
+            self.dialogCoordinator?.dismiss()
+        }
+    }
+}
+
+extension BaseCoordinator: RemoveReferenceDelegate {
+    func removeReference(_ coodinator: BaseCoordinator) {
+        removeDependency(coodinator)
     }
 }
