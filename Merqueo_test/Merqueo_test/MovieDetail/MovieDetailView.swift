@@ -13,7 +13,7 @@ final class MovieDetailView: UIView {
     private lazy var movieImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .green
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
 
@@ -44,7 +44,7 @@ final class MovieDetailView: UIView {
             movieImageView.topAnchor.constraint(equalTo: guides.topAnchor),
             movieImageView.leadingAnchor.constraint(equalTo: guides.leadingAnchor),
             movieImageView.trailingAnchor.constraint(equalTo: guides.trailingAnchor),
-            movieImageView.heightAnchor.constraint(equalToConstant: 200)
+            movieImageView.heightAnchor.constraint(equalToConstant: 230)
             
         ])
     }
@@ -56,13 +56,13 @@ final class MovieDetailView: UIView {
             stackView.topAnchor.constraint(equalTo: movieImageView.bottomAnchor),
             movieImageView.leadingAnchor.constraint(equalTo: guides.leadingAnchor),
             movieImageView.trailingAnchor.constraint(equalTo: guides.trailingAnchor),
-            movieImageView.bottomAnchor.constraint(equalTo: guides.bottomAnchor)
+            //movieImageView.bottomAnchor.constraint(equalTo: guides.bottomAnchor)
             
         ])
     }
     
     func showMovieDetail(_ detail: MovieDetailCoreDto) {
-        guard let url = URL(string: "https://image.tmdb.org/t/p/w500" + detail.posterPath) else {
+        guard let url = URL(string: "https://image.tmdb.org/t/p/w500" + detail.backdropPath) else {
             return
         }
         movieImageView.sd_setImage(with: url) { (_, _, _, _) in }

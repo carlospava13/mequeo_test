@@ -16,12 +16,7 @@ class BaseViewController: UIViewController {
         presenter.bind(self)
         presenter.viewDidLoad()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        presenter.viewWillAppear()
-    }
-    
+
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         presenter.viewDidDisappear()

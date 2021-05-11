@@ -17,10 +17,6 @@ class BasePresenter: BasePresenterType {
         // this method should be override
     }
     
-    func viewWillAppear() {
-        // this method should be override
-    }
-    
     func viewDidDisappear() {
         // this method should be override
     }

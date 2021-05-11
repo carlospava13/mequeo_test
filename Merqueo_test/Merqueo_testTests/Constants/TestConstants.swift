@@ -12,10 +12,12 @@ struct TestConstants {
         static let movieObjectViews: [MovieCoreDto] = [
             MovieCoreDto(
                 title: "Godzilla vs. Kong",
-                posterPath: "/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg"),
+                posterPath: "/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg",
+                id: 123),
             MovieCoreDto(
                 title: "Nobody",
-                posterPath: "/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg")
+                posterPath: "/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg",
+                id: 124)
         ]
     }
 }
