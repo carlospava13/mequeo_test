@@ -9,18 +9,17 @@ import Foundation
 
 final class LoadingCoordinator: BaseCoordinator {
     
-    private lazy var loadingViewController = LoadingViewController()
-    
     override func start() {
+        let loadingViewController = LoadingViewController()
         loadingViewController.modalTransitionStyle = .coverVertical
         loadingViewController.modalTransitionStyle = .crossDissolve
         loadingViewController.modalPresentationStyle = .overCurrentContext
         router.rootViewController?.present(loadingViewController, animated: false, completion: nil)
     }
     
-    func dismiss(completion: (() -> Void)?) {
-        router.dismiss(loadingViewController, animated: false)
-        removeReferenceDelegete?.removeReference(self)
-        completion?()
-    }
+//    func dismiss(completion: (() -> Void)?) {
+//        router.dismiss(loadingViewController, animated: false)
+//        removeReferenceDelegete?.removeReference(self)
+//        completion?()
+//    }
 }

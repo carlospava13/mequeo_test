@@ -9,4 +9,12 @@ import Foundation
 
 final class MovieDetailViewController: BaseViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .red
+    }
+}
+
+extension MovieDetailViewController: MovieDetailViewType {
+    
 }

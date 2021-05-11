@@ -21,6 +21,10 @@ class BasePresenter: BasePresenterType {
         // this method should be override
     }
     
+    func viewDidDisappear() {
+        // this method should be override
+    }
+    
     deinit {
         self.view = nil
     }

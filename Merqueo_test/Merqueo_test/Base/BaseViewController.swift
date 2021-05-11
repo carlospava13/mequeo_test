@@ -21,6 +21,11 @@ class BaseViewController: UIViewController {
         super.viewWillAppear(animated)
         presenter.viewWillAppear()
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        presenter.viewDidDisappear()
+    }
 }
 
 extension BaseViewController: BaseViewType { }

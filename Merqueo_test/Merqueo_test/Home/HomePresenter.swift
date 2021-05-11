@@ -59,7 +59,7 @@ final class HomePresenter: BasePresenter {
 
 extension HomePresenter: HomePresenterType {
     func movieSelected(_ movie: MovieObjectView) {
-        print(movie.id)
+        dependencies.coordinator?.showMovieDetail(id: movie.id)
     }
     
     func refreshMovies() {

@@ -18,17 +18,9 @@ class BaseCoordinator: CoordinatorType {
     var router: RouterType
     weak var removeReferenceDelegete: RemoveReferenceDelegate?
 
-    private lazy var loadindCoordinator: LoadingCoordinator? = {
-        let coordinator = LoadingCoordinator(router: router)
-        coordinator.removeReferenceDelegete = self
-        return coordinator
-    }()
+    private var loadindCoordinator: LoadingCoordinator?
 
-    private lazy var dialogCoordinator: DialogCoordinator? = {
-        let coordinator = DialogCoordinator(router: router, delegate: self)
-        coordinator.removeReferenceDelegete = self
-        return coordinator
-    }()
+    private var dialogCoordinator: DialogCoordinator?
 
     init(router: RouterType) {
         self.router = router
@@ -61,16 +53,21 @@ class BaseCoordinator: CoordinatorType {
 
 extension BaseCoordinator: BaseCoordinatorType {
     func showLoading() {
+        loadindCoordinator = LoadingCoordinator(router: router)
+        loadindCoordinator?.removeReferenceDelegete = self
         loadindCoordinator?.start()
     }
 
     func hideLoading(completion: (() -> Void)?) {
-        DispatchQueue.main.async {
-            self.loadindCoordinator?.dismiss(completion: completion)
-        }
+        loadindCoordinator?.toPresent().dismiss(animated: false, completion: {
+            self.loadindCoordinator = nil
+            completion?()
+        })
     }
 
     func showError(description: String) {
+        dialogCoordinator = DialogCoordinator(router: router, delegate: self)
+        dialogCoordinator?.removeReferenceDelegete = self
         dialogCoordinator?.start(description: description)
     }
 }
