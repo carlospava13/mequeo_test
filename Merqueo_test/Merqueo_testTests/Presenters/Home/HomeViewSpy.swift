@@ -23,11 +23,12 @@ class HomeViewSpy: HomeViewType {
 }
 
 class HomeCoordinatorSpy: HomeCoordinatorDelegate {
+    typealias Completion = () -> Void
     init() {}
-    var showLoadingCallBack: () -> Void = {}
-    var hideLoadingCallBack: () -> Void = {}
-    var showErrorCallBack: () -> Void = {}
-    var showMovieDetailCallBack: () -> Void = {}
+    var showLoadingCallBack: Completion = {}
+    var hideLoadingCallBack: Completion = {}
+    var showErrorCallBack: Completion = {}
+    var showMovieDetailCallBack: Completion = {}
     func showLoading() {
         showLoadingCallBack()
     }
