@@ -55,6 +55,7 @@
 		8495BEC32646CE35005F4E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8495BEC12646CE35005F4E28 /* LaunchScreen.storyboard */; };
 		8495BECE2646CE35005F4E28 /* Merqueo_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BECD2646CE35005F4E28 /* Merqueo_testTests.swift */; };
 		8495BED92646CE35005F4E28 /* Merqueo_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BED82646CE35005F4E28 /* Merqueo_testUITests.swift */; };
+		84DEBDC0264B0B39009E2F56 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDBF264B0B39009E2F56 /* MovieDetailView.swift */; };
 		84E739162648902400ACAE52 /* HomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E739152648902400ACAE52 /* HomePresenterTest.swift */; };
 		84E7391D264890A000ACAE52 /* HomeViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7391C264890A000ACAE52 /* HomeViewSpy.swift */; };
 		84FA3DC42647721700C2BB3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DC32647721700C2BB3A /* HomeViewController.swift */; };
@@ -152,6 +153,7 @@
 		8495BED42646CE35005F4E28 /* Merqueo_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Merqueo_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8495BED82646CE35005F4E28 /* Merqueo_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merqueo_testUITests.swift; sourceTree = "<group>"; };
 		8495BEDA2646CE35005F4E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DEBDBF264B0B39009E2F56 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		84E739152648902400ACAE52 /* HomePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTest.swift; sourceTree = "<group>"; };
 		84E7391C264890A000ACAE52 /* HomeViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewSpy.swift; sourceTree = "<group>"; };
 		84FA3DC32647721700C2BB3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				841381F8264A0CF20024BA40 /* MovieDetailPresenter.swift */,
 				841381FC264A0CFB0024BA40 /* MovieDetailContract.swift */,
 				84138200264A0D070024BA40 /* MovieDetailCoordinator.swift */,
+				84DEBDBF264B0B39009E2F56 /* MovieDetailView.swift */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -698,6 +701,7 @@
 				84003E2B2646F23000FC01B0 /* Presentable.swift in Sources */,
 				848FC2BF26482D5B0090D9C3 /* HomeDataSource.swift in Sources */,
 				84003E332646F25B00FC01B0 /* MainRouter.swift in Sources */,
+				84DEBDC0264B0B39009E2F56 /* MovieDetailView.swift in Sources */,
 				84003E3C2646F2F800FC01B0 /* ApplicationViewController.swift in Sources */,
 				848FC2BB264828B50090D9C3 /* HomeView.swift in Sources */,
 				84FA3DD2264773CE00C2BB3A /* HomeCoordinator.swift in Sources */,

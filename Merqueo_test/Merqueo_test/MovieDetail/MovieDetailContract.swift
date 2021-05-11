@@ -5,8 +5,10 @@
 //  Created by Carlos Pava on 10/05/21.
 //
 
-import Foundation
+import MerqueoCore
 
 protocol MovieDetailPresenterType: BasePresenterType {}
 
-protocol MovieDetailViewType: BaseViewType {}
+protocol MovieDetailViewType: BaseViewType {
+    func showMovieDetail(_ detail: MovieDetailCoreDto)
+}

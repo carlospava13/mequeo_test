@@ -5,9 +5,10 @@
 //  Created by Carlos Pava on 10/05/21.
 //
 
-import Foundation
+import MerqueoCore
+import MerqueoData
 
-protocol MovieDetailCoordinatorDelegate: AnyObject {
+protocol MovieDetailCoordinatorDelegate: BaseCoordinatorType {
     func popView()
 }
 
@@ -16,7 +17,10 @@ final class MovieDetailCoordinator: BaseCoordinator {
 
     func start(id: Int) {
         let movieDetailViewController = MovieDetailViewController()
-        let dependencies = MovieDetailPresenter.InputDependencies(coordinator: movieDetailCoordinatorDelegate, id: id)
+        let apiClient = ApiClient()
+        let repository = GetMovieDetailRepository(service: apiClient)
+        let getMovieDetailInteractor = GetMovieDetailInteractor(repository: repository)
+        let dependencies = MovieDetailPresenter.InputDependencies(coordinator: movieDetailCoordinatorDelegate, id: id, getMovieDetailInteractor: getMovieDetailInteractor)
         let presenter = MovieDetailPresenter(dependencies: dependencies)
         movieDetailViewController.presenter = presenter
         router.push(
