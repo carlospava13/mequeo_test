@@ -24,9 +24,13 @@ final class HomeViewController: BaseViewController {
 }
 
 extension HomeViewController: HomeViewType {
+    func endRefresh() {
+        
+    }
+    
     func set(movies: [MovieObjectView]) {
-        DispatchQueue.main.async {
+        //DispatchQueue.main.async {
             self.homeView.set(movies: movies)
-        }
+        //}
     }
 }

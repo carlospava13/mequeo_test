@@ -61,9 +61,7 @@ class BaseCoordinator: CoordinatorType {
 
 extension BaseCoordinator: BaseCoordinatorType {
     func showLoading() {
-        DispatchQueue.main.async {
-            self.loadindCoordinator?.start()
-        }
+        loadindCoordinator?.start()
     }
 
     func hideLoading(completion: (() -> Void)?) {
@@ -73,17 +71,13 @@ extension BaseCoordinator: BaseCoordinatorType {
     }
 
     func showError(description: String) {
-        DispatchQueue.main.async {
-            self.dialogCoordinator?.start(description: description)
-        }
+        dialogCoordinator?.start(description: description)
     }
 }
 
 extension BaseCoordinator: DialogViewDelegate {
     func tryAgain() {
-        DispatchQueue.main.async {
-            self.dialogCoordinator?.dismiss()
-        }
+        dialogCoordinator?.dismiss()
     }
 }
 

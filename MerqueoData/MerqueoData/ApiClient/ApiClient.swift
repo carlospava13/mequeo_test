@@ -24,6 +24,7 @@ public final class ApiClient: ApiClientType {
                 return $0.data
             }
             .print()
+            .receive(on: RunLoop.main)
             .decode(type: T.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
