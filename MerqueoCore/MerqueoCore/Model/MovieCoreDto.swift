@@ -10,4 +10,5 @@ import Foundation
 public struct MovieCoreDto {
     public let title: String
     public let posterPath: String
+    public let id: Int
 }

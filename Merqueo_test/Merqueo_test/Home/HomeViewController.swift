@@ -37,6 +37,10 @@ extension HomeViewController: HomeViewType {
 }
 
 extension HomeViewController: HomeViewDelegate {
+    func didMovieSelected(_ movie: MovieObjectView) {
+        ownerPresenter.movieSelected(movie)
+    }
+    
     func refresh() {
         ownerPresenter.refreshMovies()
     }

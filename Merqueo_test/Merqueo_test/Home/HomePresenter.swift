@@ -50,13 +50,18 @@ final class HomePresenter: BasePresenter {
         let movies = movies.map { (movieDto) -> MovieObjectView in
             MovieObjectView(
                 title: movieDto.title,
-                posterPath: movieDto.posterPath)
+                posterPath: movieDto.posterPath,
+                id: movieDto.id)
         }
         ownerView.set(movies: movies)
     }
 }
 
 extension HomePresenter: HomePresenterType {
+    func movieSelected(_ movie: MovieObjectView) {
+        print(movie.id)
+    }
+    
     func refreshMovies() {
         getMovies()
     }

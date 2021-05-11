@@ -35,6 +35,10 @@
 		84121AE026489B3600E55FEF /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121ADF26489B3600E55FEF /* DialogViewController.swift */; };
 		84121AE626489B7000E55FEF /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121AE526489B7000E55FEF /* DialogView.swift */; };
 		84121AEA2648A33C00E55FEF /* DialogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121AE92648A33C00E55FEF /* DialogCoordinator.swift */; };
+		841381F3264A0CE20024BA40 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841381F2264A0CE20024BA40 /* MovieDetailViewController.swift */; };
+		841381F9264A0CF20024BA40 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841381F8264A0CF20024BA40 /* MovieDetailPresenter.swift */; };
+		841381FD264A0CFB0024BA40 /* MovieDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841381FC264A0CFB0024BA40 /* MovieDetailContract.swift */; };
+		84138201264A0D070024BA40 /* MovieDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84138200264A0D070024BA40 /* MovieDetailCoordinator.swift */; };
 		848FC2BB264828B50090D9C3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2BA264828B50090D9C3 /* HomeView.swift */; };
 		848FC2BF26482D5B0090D9C3 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */; };
 		848FC2C426482DAC0090D9C3 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2C326482DAC0090D9C3 /* CollectionDataSource.swift */; };
@@ -121,6 +125,10 @@
 		84121ADF26489B3600E55FEF /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
 		84121AE526489B7000E55FEF /* DialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
 		84121AE92648A33C00E55FEF /* DialogCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCoordinator.swift; sourceTree = "<group>"; };
+		841381F2264A0CE20024BA40 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		841381F8264A0CF20024BA40 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		841381FC264A0CFB0024BA40 /* MovieDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailContract.swift; sourceTree = "<group>"; };
+		84138200264A0D070024BA40 /* MovieDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailCoordinator.swift; sourceTree = "<group>"; };
 		842F27E92646DE5200C531B1 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		848FC2BA264828B50090D9C3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
@@ -266,6 +274,17 @@
 			path = DialogView;
 			sourceTree = "<group>";
 		};
+		841381F1264A0CC40024BA40 /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				841381F2264A0CE20024BA40 /* MovieDetailViewController.swift */,
+				841381F8264A0CF20024BA40 /* MovieDetailPresenter.swift */,
+				841381FC264A0CFB0024BA40 /* MovieDetailContract.swift */,
+				84138200264A0D070024BA40 /* MovieDetailCoordinator.swift */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
 		848FC2C226482D940090D9C3 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +329,7 @@
 		8495BEB22646CE34005F4E28 /* Merqueo_test */ = {
 			isa = PBXGroup;
 			children = (
+				841381F1264A0CC40024BA40 /* MovieDetail */,
 				84121ADE26489B1C00E55FEF /* DialogView */,
 				848FC30726488CDA0090D9C3 /* Extension */,
 				84FA3DC22647720900C2BB3A /* Home */,
@@ -656,18 +676,22 @@
 				848FC2D22648359A0090D9C3 /* CollectionViewHorizontalCustom.swift in Sources */,
 				848FC2DA264837F50090D9C3 /* MovieCell.swift in Sources */,
 				84003E212646F20500FC01B0 /* BaseCoordinator.swift in Sources */,
+				841381F3264A0CE20024BA40 /* MovieDetailViewController.swift in Sources */,
 				848FC2D6264837B90090D9C3 /* MovieObjectView.swift in Sources */,
 				848FC2CA26482E7C0090D9C3 /* CollectionViewCell.swift in Sources */,
 				84003E4B2646F35500FC01B0 /* BaseContract.swift in Sources */,
 				84003E372646F27600FC01B0 /* RouterType.swift in Sources */,
 				84003E682646F77900FC01B0 /* LoadingCoordinator.swift in Sources */,
 				84121AE626489B7000E55FEF /* DialogView.swift in Sources */,
+				84138201264A0D070024BA40 /* MovieDetailCoordinator.swift in Sources */,
 				84003E272646F21900FC01B0 /* CoordinatorType.swift in Sources */,
 				84003E432646F32700FC01B0 /* BaseViewController.swift in Sources */,
 				8495BEB42646CE34005F4E28 /* AppDelegate.swift in Sources */,
 				84003E4F2646F38B00FC01B0 /* ApplicationContract.swift in Sources */,
 				848FC2CE26482EC60090D9C3 /* ObjectView.swift in Sources */,
+				841381FD264A0CFB0024BA40 /* MovieDetailContract.swift in Sources */,
 				84121AEA2648A33C00E55FEF /* DialogCoordinator.swift in Sources */,
+				841381F9264A0CF20024BA40 /* MovieDetailPresenter.swift in Sources */,
 				8495BEBE2646CE34005F4E28 /* Merqueo_test.xcdatamodeld in Sources */,
 				84003E472646F33D00FC01B0 /* BasePresenter.swift in Sources */,
 				8495BEB62646CE34005F4E28 /* SceneDelegate.swift in Sources */,

@@ -8,6 +8,7 @@
 import UIKit
 
 protocol HomeViewDelegate: AnyObject {
+    func didMovieSelected(_ movie: MovieObjectView)
     func refresh()
 }
 
@@ -33,7 +34,9 @@ final class HomeView: UIView {
     
     private lazy var dataSource: HomeDataSource = {
         let datasource = HomeDataSource(identifier: .movie)
+        datasource.homeDataSourceDelegate = self
         collectionView.dataSource = datasource
+        collectionView.delegate = datasource
         return datasource
     }()
     
@@ -72,5 +75,11 @@ final class HomeView: UIView {
         if refreshControl.isRefreshing {
             refreshControl.endRefreshing()
         }
+    }
+}
+
+extension HomeView: HomeDataSourceDelegate {
+    func didMovieSelected(_ movie: MovieObjectView) {
+        delegate?.didMovieSelected(movie)
     }
 }
