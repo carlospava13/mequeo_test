@@ -30,7 +30,8 @@ final class HomePresenter: BasePresenter {
 
     private func getMovies() {
         dependencies.coordinator?.showLoading()
-        dependencies.getMoviesInteractor.getMovies().sink { [weak self] completion in
+        dependencies.getMoviesInteractor.getMovies().sink { [weak self, weak ownerView] completion in
+            ownerView?.endRefresh()
             switch completion {
             case .failure(let error):
                 self?.dependencies.coordinator?.hideLoading(completion: {
@@ -55,4 +56,8 @@ final class HomePresenter: BasePresenter {
     }
 }
 
-extension HomePresenter: HomePresenterType {}
+extension HomePresenter: HomePresenterType {
+    func refreshMovies() {
+        getMovies()
+    }
+}

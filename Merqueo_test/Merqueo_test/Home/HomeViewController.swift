@@ -8,29 +8,36 @@
 import Foundation
 
 final class HomeViewController: BaseViewController {
-    
-    private var homeView: HomeView = HomeView()
-    
-    override func loadView() {
-        view = homeView
+    private var homeView = HomeView()
+
+    private var ownerPresenter: HomePresenterType! {
+        presenter as? HomePresenterType
     }
     
+    override func loadView() {
+        homeView.delegate = self
+        view = homeView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBarColor()
         title = "Movies"
     }
-    
 }
 
 extension HomeViewController: HomeViewType {
     func endRefresh() {
-        
+        homeView.endRefresh()
     }
-    
+
     func set(movies: [MovieObjectView]) {
-        //DispatchQueue.main.async {
-            self.homeView.set(movies: movies)
-        //}
+        homeView.set(movies: movies)
+    }
+}
+
+extension HomeViewController: HomeViewDelegate {
+    func refresh() {
+        ownerPresenter.refreshMovies()
     }
 }

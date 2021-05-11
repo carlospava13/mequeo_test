@@ -11,6 +11,7 @@ final class LoadingViewController: UIViewController {
     private lazy var indicatorActivityView: UIActivityIndicatorView = {
         let view = UIActivityIndicatorView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.color = .white
         return view
     }()
 
