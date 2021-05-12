@@ -33,5 +33,21 @@ struct TestConstant {
                                                             ],
                                                             totalPages: 500,
                                                             totalResults: 10000)
+        
+        static let movieDetail: MovieDetailDto = MovieDetailDto(adult: false,
+                                                                backdropPath: "/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg",
+                                                                genres: [
+                                                                 GenresDto(id: 28,
+                                                                           name: "Action")
+                                                                ],
+                                                                originalTitle: "Zack Snyder's Justice League",
+                                                                overview: "Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.",
+                                                                posterPath: "/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg",
+                                                                productionCompanies: [
+                                                                    ProductionCompaniesDto(id: 174,
+                                                                                           logoPath: "/IuAlhI9eVC9Z8UQWOIDdWRKSEJ.png",
+                                                                                           name: "Warner Bros. Pictures",
+                                                                                           originCountry: "US")
+                                                                ])
     }
 }

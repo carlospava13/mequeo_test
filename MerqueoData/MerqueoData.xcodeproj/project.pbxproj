@@ -30,6 +30,7 @@
 		84DEBDCE264B0E6A009E2F56 /* GetMovieDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDCD264B0E6A009E2F56 /* GetMovieDetailRepository.swift */; };
 		84DEBE06264B666F009E2F56 /* GetPopularMovieRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBE05264B666F009E2F56 /* GetPopularMovieRepositoryTest.swift */; };
 		84DEBE0C264B67C9009E2F56 /* TestConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBE0B264B67C9009E2F56 /* TestConstant.swift */; };
+		84DEBE12264B69B8009E2F56 /* GetMovieDetailRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBE11264B69B8009E2F56 /* GetMovieDetailRepositoryTest.swift */; };
 		84FA3DB726474FF700C2BB3A /* DataStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DB626474FF700C2BB3A /* DataStorageType.swift */; };
 		84FA3DBF2647506E00C2BB3A /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DBE2647506E00C2BB3A /* DataStorage.swift */; };
 		84FA3DD626477D0800C2BB3A /* GetPopularMovieRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DD526477D0800C2BB3A /* GetPopularMovieRepositoryType.swift */; };
@@ -74,6 +75,7 @@
 		84DEBDCD264B0E6A009E2F56 /* GetMovieDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailRepository.swift; sourceTree = "<group>"; };
 		84DEBE05264B666F009E2F56 /* GetPopularMovieRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPopularMovieRepositoryTest.swift; sourceTree = "<group>"; };
 		84DEBE0B264B67C9009E2F56 /* TestConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstant.swift; sourceTree = "<group>"; };
+		84DEBE11264B69B8009E2F56 /* GetMovieDetailRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailRepositoryTest.swift; sourceTree = "<group>"; };
 		84FA3DB626474FF700C2BB3A /* DataStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorageType.swift; sourceTree = "<group>"; };
 		84FA3DBE2647506E00C2BB3A /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		84FA3DD526477D0800C2BB3A /* GetPopularMovieRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPopularMovieRepositoryType.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				84003E122646ECB900FC01B0 /* GetTokenRepositoryTest.swift */,
 				84DEBE05264B666F009E2F56 /* GetPopularMovieRepositoryTest.swift */,
+				84DEBE11264B69B8009E2F56 /* GetMovieDetailRepositoryTest.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				84003E132646ECB900FC01B0 /* GetTokenRepositoryTest.swift in Sources */,
 				842F28012646EB6C00C531B1 /* TestError.swift in Sources */,
 				84CB35262646D1010002B421 /* MerqueoDataTests.swift in Sources */,
+				84DEBE12264B69B8009E2F56 /* GetMovieDetailRepositoryTest.swift in Sources */,
 				842F27FC2646E7C300C531B1 /* ApiClientStub.swift in Sources */,
 				84DEBE06264B666F009E2F56 /* GetPopularMovieRepositoryTest.swift in Sources */,
 				84DEBE0C264B67C9009E2F56 /* TestConstant.swift in Sources */,
