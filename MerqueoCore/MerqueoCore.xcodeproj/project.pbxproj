@@ -23,6 +23,8 @@
 		84DEBDD2264B0EF9009E2F56 /* GetMovieDetailInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDD1264B0EF9009E2F56 /* GetMovieDetailInteractorType.swift */; };
 		84DEBDD6264B0F5A009E2F56 /* MovieDetailCoreDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDD5264B0F5A009E2F56 /* MovieDetailCoreDto.swift */; };
 		84DEBDD9264B0FA0009E2F56 /* GetMovieDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDD8264B0FA0009E2F56 /* GetMovieDetailInteractor.swift */; };
+		84DEBE16264B6B59009E2F56 /* GetMovieDetailInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBE15264B6B59009E2F56 /* GetMovieDetailInteractorTest.swift */; };
+		84DEBE19264B6BDA009E2F56 /* GetMovieDetailRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBE18264B6BDA009E2F56 /* GetMovieDetailRepositoryStub.swift */; };
 		84FA3DEC2647807900C2BB3A /* GetMoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DEB2647807900C2BB3A /* GetMoviesInteractor.swift */; };
 		84FA3DEF2647809C00C2BB3A /* GetMoviesInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DEE2647809C00C2BB3A /* GetMoviesInteractorType.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +72,8 @@
 		84DEBDD1264B0EF9009E2F56 /* GetMovieDetailInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailInteractorType.swift; sourceTree = "<group>"; };
 		84DEBDD5264B0F5A009E2F56 /* MovieDetailCoreDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailCoreDto.swift; sourceTree = "<group>"; };
 		84DEBDD8264B0FA0009E2F56 /* GetMovieDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailInteractor.swift; sourceTree = "<group>"; };
+		84DEBE15264B6B59009E2F56 /* GetMovieDetailInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailInteractorTest.swift; sourceTree = "<group>"; };
+		84DEBE18264B6BDA009E2F56 /* GetMovieDetailRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailRepositoryStub.swift; sourceTree = "<group>"; };
 		84FA3DEB2647807900C2BB3A /* GetMoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoviesInteractor.swift; sourceTree = "<group>"; };
 		84FA3DEE2647809C00C2BB3A /* GetMoviesInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoviesInteractorType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				848FC2E326483D660090D9C3 /* GetMovieInteractorTest.swift */,
+				84DEBE15264B6B59009E2F56 /* GetMovieDetailInteractorTest.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			children = (
 				848FC2E826483DEA0090D9C3 /* BaseRepositoryStub.swift */,
 				848FC2F126483F0A0090D9C3 /* GetPopularMovieRepositoryStub.swift */,
+				84DEBE18264B6BDA009E2F56 /* GetMovieDetailRepositoryStub.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -335,9 +341,11 @@
 			files = (
 				848FC2FE264842620090D9C3 /* ConstantsCoreTest.swift in Sources */,
 				848FC2F226483F0A0090D9C3 /* GetPopularMovieRepositoryStub.swift in Sources */,
+				84DEBE16264B6B59009E2F56 /* GetMovieDetailInteractorTest.swift in Sources */,
 				848FC2E926483DEA0090D9C3 /* BaseRepositoryStub.swift in Sources */,
 				848FC2EE26483EB50090D9C3 /* CoreTestError.swift in Sources */,
 				848FC2E426483D660090D9C3 /* GetMovieInteractorTest.swift in Sources */,
+				84DEBE19264B6BDA009E2F56 /* GetMovieDetailRepositoryStub.swift in Sources */,
 				84003E88264743BF00FC01B0 /* MerqueoCoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
