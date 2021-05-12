@@ -3,20 +3,72 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09E9C5411E3FC568F60F2A08 /* Pods_Merqueo_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5F6A59EDA7C0DEF76AFF5D /* Pods_Merqueo_testTests.framework */; };
+		1AC7A9838B305CB3042E07F5 /* Pods_Merqueo_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA427D9AD20ED87B03775F41 /* Pods_Merqueo_test.framework */; };
+		84003E212646F20500FC01B0 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E202646F20500FC01B0 /* BaseCoordinator.swift */; };
+		84003E272646F21900FC01B0 /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E262646F21900FC01B0 /* CoordinatorType.swift */; };
+		84003E2B2646F23000FC01B0 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E2A2646F23000FC01B0 /* Presentable.swift */; };
+		84003E2F2646F24800FC01B0 /* RemoveReferenceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E2E2646F24800FC01B0 /* RemoveReferenceDelegate.swift */; };
+		84003E332646F25B00FC01B0 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E322646F25B00FC01B0 /* MainRouter.swift */; };
+		84003E372646F27600FC01B0 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E362646F27600FC01B0 /* RouterType.swift */; };
+		84003E3C2646F2F800FC01B0 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E3B2646F2F800FC01B0 /* ApplicationViewController.swift */; };
+		84003E432646F32700FC01B0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E422646F32700FC01B0 /* BaseViewController.swift */; };
+		84003E472646F33D00FC01B0 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E462646F33D00FC01B0 /* BasePresenter.swift */; };
+		84003E4B2646F35500FC01B0 /* BaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E4A2646F35500FC01B0 /* BaseContract.swift */; };
+		84003E4F2646F38B00FC01B0 /* ApplicationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E4E2646F38B00FC01B0 /* ApplicationContract.swift */; };
+		84003E532646F39F00FC01B0 /* ApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E522646F39F00FC01B0 /* ApplicationPresenter.swift */; };
+		84003E572646F3B900FC01B0 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E562646F3B900FC01B0 /* ApplicationCoordinator.swift */; };
+		84003E622646F69500FC01B0 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E612646F69500FC01B0 /* LoadingViewController.swift */; };
+		84003E682646F77900FC01B0 /* LoadingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84003E672646F77900FC01B0 /* LoadingCoordinator.swift */; };
+		84003EAE26474AF800FC01B0 /* MerqueoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EAD26474AF800FC01B0 /* MerqueoCore.framework */; };
+		84003EAF26474AF800FC01B0 /* MerqueoCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EAD26474AF800FC01B0 /* MerqueoCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84003EB626474C8300FC01B0 /* MerqueoData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EB526474C8300FC01B0 /* MerqueoData.framework */; };
+		84003EB726474C8300FC01B0 /* MerqueoData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84003EB526474C8300FC01B0 /* MerqueoData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84121ABE2648929A00E55FEF /* GetMoviesInteractorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121ABD2648929A00E55FEF /* GetMoviesInteractorStub.swift */; };
+		84121AC42648952600E55FEF /* BaseInteractorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121AC32648952600E55FEF /* BaseInteractorStub.swift */; };
+		84121AC92648956C00E55FEF /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121AC82648956C00E55FEF /* TestError.swift */; };
+		84121AD9264898D600E55FEF /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121AD8264898D600E55FEF /* TestConstants.swift */; };
+		84121AE026489B3600E55FEF /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121ADF26489B3600E55FEF /* DialogViewController.swift */; };
+		84121AE626489B7000E55FEF /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121AE526489B7000E55FEF /* DialogView.swift */; };
+		84121AEA2648A33C00E55FEF /* DialogCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84121AE92648A33C00E55FEF /* DialogCoordinator.swift */; };
+		841381F3264A0CE20024BA40 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841381F2264A0CE20024BA40 /* MovieDetailViewController.swift */; };
+		841381F9264A0CF20024BA40 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841381F8264A0CF20024BA40 /* MovieDetailPresenter.swift */; };
+		841381FD264A0CFB0024BA40 /* MovieDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841381FC264A0CFB0024BA40 /* MovieDetailContract.swift */; };
+		84138201264A0D070024BA40 /* MovieDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84138200264A0D070024BA40 /* MovieDetailCoordinator.swift */; };
+		848FC2BB264828B50090D9C3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2BA264828B50090D9C3 /* HomeView.swift */; };
+		848FC2BF26482D5B0090D9C3 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */; };
+		848FC2C426482DAC0090D9C3 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2C326482DAC0090D9C3 /* CollectionDataSource.swift */; };
+		848FC2CA26482E7C0090D9C3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2C926482E7C0090D9C3 /* CollectionViewCell.swift */; };
+		848FC2CE26482EC60090D9C3 /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2CD26482EC60090D9C3 /* ObjectView.swift */; };
+		848FC2D22648359A0090D9C3 /* CollectionViewHorizontalCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2D12648359A0090D9C3 /* CollectionViewHorizontalCustom.swift */; };
+		848FC2D6264837B90090D9C3 /* MovieObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2D5264837B90090D9C3 /* MovieObjectView.swift */; };
+		848FC2DA264837F50090D9C3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC2D9264837F50090D9C3 /* MovieCell.swift */; };
+		848FC30926488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC30826488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift */; };
 		8495BEB42646CE34005F4E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEB32646CE34005F4E28 /* AppDelegate.swift */; };
 		8495BEB62646CE34005F4E28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEB52646CE34005F4E28 /* SceneDelegate.swift */; };
-		8495BEB82646CE34005F4E28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEB72646CE34005F4E28 /* ViewController.swift */; };
-		8495BEBB2646CE34005F4E28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8495BEB92646CE34005F4E28 /* Main.storyboard */; };
 		8495BEBE2646CE34005F4E28 /* Merqueo_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8495BEBC2646CE34005F4E28 /* Merqueo_test.xcdatamodeld */; };
 		8495BEC02646CE35005F4E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8495BEBF2646CE35005F4E28 /* Assets.xcassets */; };
 		8495BEC32646CE35005F4E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8495BEC12646CE35005F4E28 /* LaunchScreen.storyboard */; };
 		8495BECE2646CE35005F4E28 /* Merqueo_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BECD2646CE35005F4E28 /* Merqueo_testTests.swift */; };
 		8495BED92646CE35005F4E28 /* Merqueo_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495BED82646CE35005F4E28 /* Merqueo_testUITests.swift */; };
-		8495BEEA2646CEB1005F4E28 /* merqueoSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8495BEE92646CEB1005F4E28 /* merqueoSettings.plist */; };
+		84DEBDC0264B0B39009E2F56 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDBF264B0B39009E2F56 /* MovieDetailView.swift */; };
+		84DEBDDD264B174F009E2F56 /* MovieDetailPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDDC264B174F009E2F56 /* MovieDetailPresenterTest.swift */; };
+		84DEBDE3264B17A7009E2F56 /* MovieDetailViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDE2264B17A7009E2F56 /* MovieDetailViewSpy.swift */; };
+		84DEBDE7264B1825009E2F56 /* GetMovieDetailInteractorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDE6264B1825009E2F56 /* GetMovieDetailInteractorStub.swift */; };
+		84DEBDEB264B1D4E009E2F56 /* MovieDetailAbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDEA264B1D4E009E2F56 /* MovieDetailAbstractFactory.swift */; };
+		84DEBDEF264B2075009E2F56 /* MovieDetailDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDEE264B2075009E2F56 /* MovieDetailDescriptionView.swift */; };
+		84DEBDF3264B2992009E2F56 /* ProductionCompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDF2264B2992009E2F56 /* ProductionCompanyView.swift */; };
+		84E739162648902400ACAE52 /* HomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E739152648902400ACAE52 /* HomePresenterTest.swift */; };
+		84E7391D264890A000ACAE52 /* HomeViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7391C264890A000ACAE52 /* HomeViewSpy.swift */; };
+		84FA3DC42647721700C2BB3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DC32647721700C2BB3A /* HomeViewController.swift */; };
+		84FA3DCA264772CC00C2BB3A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DC9264772CC00C2BB3A /* HomePresenter.swift */; };
+		84FA3DCE264772E200C2BB3A /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DCD264772E200C2BB3A /* HomeContract.swift */; };
+		84FA3DD2264773CE00C2BB3A /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DD1264773CE00C2BB3A /* HomeCoordinator.swift */; };
+		EAD6EA67632C1953EF6E89FA /* Pods_Merqueo_test_Merqueo_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189F6D1B5A1F2A60EC5E71DC /* Pods_Merqueo_test_Merqueo_testUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +88,67 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84003EB026474AF800FC01B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84003EAF26474AF800FC01B0 /* MerqueoCore.framework in Embed Frameworks */,
+				84003EB726474C8300FC01B0 /* MerqueoData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		189F6D1B5A1F2A60EC5E71DC /* Pods_Merqueo_test_Merqueo_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merqueo_test_Merqueo_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A5F6A59EDA7C0DEF76AFF5D /* Pods_Merqueo_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merqueo_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4654352D7874263AE9B5E3A5 /* Pods-Merqueo_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_testTests.release.xcconfig"; path = "Target Support Files/Pods-Merqueo_testTests/Pods-Merqueo_testTests.release.xcconfig"; sourceTree = "<group>"; };
+		6A292CF8F200A8827B4F6D34 /* Pods-Merqueo_test-Merqueo_testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_test-Merqueo_testUITests.debug.xcconfig"; path = "Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		84003E202646F20500FC01B0 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		84003E262646F21900FC01B0 /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		84003E2A2646F23000FC01B0 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		84003E2E2646F24800FC01B0 /* RemoveReferenceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveReferenceDelegate.swift; sourceTree = "<group>"; };
+		84003E322646F25B00FC01B0 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		84003E362646F27600FC01B0 /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
+		84003E3B2646F2F800FC01B0 /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
+		84003E422646F32700FC01B0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		84003E462646F33D00FC01B0 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		84003E4A2646F35500FC01B0 /* BaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseContract.swift; sourceTree = "<group>"; };
+		84003E4E2646F38B00FC01B0 /* ApplicationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationContract.swift; sourceTree = "<group>"; };
+		84003E522646F39F00FC01B0 /* ApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationPresenter.swift; sourceTree = "<group>"; };
+		84003E562646F3B900FC01B0 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		84003E612646F69500FC01B0 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		84003E672646F77900FC01B0 /* LoadingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCoordinator.swift; sourceTree = "<group>"; };
+		84003EAD26474AF800FC01B0 /* MerqueoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84003EB526474C8300FC01B0 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84121ABD2648929A00E55FEF /* GetMoviesInteractorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoviesInteractorStub.swift; sourceTree = "<group>"; };
+		84121AC32648952600E55FEF /* BaseInteractorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorStub.swift; sourceTree = "<group>"; };
+		84121AC82648956C00E55FEF /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		84121AD8264898D600E55FEF /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		84121ADF26489B3600E55FEF /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
+		84121AE526489B7000E55FEF /* DialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
+		84121AE92648A33C00E55FEF /* DialogCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCoordinator.swift; sourceTree = "<group>"; };
+		841381F2264A0CE20024BA40 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		841381F8264A0CF20024BA40 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		841381FC264A0CFB0024BA40 /* MovieDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailContract.swift; sourceTree = "<group>"; };
+		84138200264A0D070024BA40 /* MovieDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailCoordinator.swift; sourceTree = "<group>"; };
+		842F27E92646DE5200C531B1 /* MerqueoData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MerqueoData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		848FC2BA264828B50090D9C3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
+		848FC2C326482DAC0090D9C3 /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		848FC2C926482E7C0090D9C3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		848FC2CD26482EC60090D9C3 /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
+		848FC2D12648359A0090D9C3 /* CollectionViewHorizontalCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHorizontalCustom.swift; sourceTree = "<group>"; };
+		848FC2D5264837B90090D9C3 /* MovieObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieObjectView.swift; sourceTree = "<group>"; };
+		848FC2D9264837F50090D9C3 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		848FC30826488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController +NavigationBarColor.swift"; sourceTree = "<group>"; };
 		8495BEB02646CE34005F4E28 /* Merqueo_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Merqueo_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8495BEB32646CE34005F4E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8495BEB52646CE34005F4E28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8495BEB72646CE34005F4E28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8495BEBA2646CE34005F4E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8495BEBD2646CE34005F4E28 /* Merqueo_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Merqueo_test.xcdatamodel; sourceTree = "<group>"; };
 		8495BEBF2646CE35005F4E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8495BEC22646CE35005F4E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,7 +159,24 @@
 		8495BED42646CE35005F4E28 /* Merqueo_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Merqueo_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8495BED82646CE35005F4E28 /* Merqueo_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merqueo_testUITests.swift; sourceTree = "<group>"; };
 		8495BEDA2646CE35005F4E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8495BEE92646CEB1005F4E28 /* merqueoSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = merqueoSettings.plist; sourceTree = "<group>"; };
+		84DEBDBF264B0B39009E2F56 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		84DEBDDC264B174F009E2F56 /* MovieDetailPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenterTest.swift; sourceTree = "<group>"; };
+		84DEBDE2264B17A7009E2F56 /* MovieDetailViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewSpy.swift; sourceTree = "<group>"; };
+		84DEBDE6264B1825009E2F56 /* GetMovieDetailInteractorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailInteractorStub.swift; sourceTree = "<group>"; };
+		84DEBDEA264B1D4E009E2F56 /* MovieDetailAbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailAbstractFactory.swift; sourceTree = "<group>"; };
+		84DEBDEE264B2075009E2F56 /* MovieDetailDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailDescriptionView.swift; sourceTree = "<group>"; };
+		84DEBDF2264B2992009E2F56 /* ProductionCompanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionCompanyView.swift; sourceTree = "<group>"; };
+		84E739152648902400ACAE52 /* HomePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTest.swift; sourceTree = "<group>"; };
+		84E7391C264890A000ACAE52 /* HomeViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewSpy.swift; sourceTree = "<group>"; };
+		84FA3DC32647721700C2BB3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		84FA3DC9264772CC00C2BB3A /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		84FA3DCD264772E200C2BB3A /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		84FA3DD1264773CE00C2BB3A /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		9B1E70E318DD45FE98B973B2 /* Pods-Merqueo_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_test.release.xcconfig"; path = "Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test.release.xcconfig"; sourceTree = "<group>"; };
+		AD4426C9471EA0B674AAD73A /* Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig"; path = "Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B88155FB9A3B8E3BA0137AD2 /* Pods-Merqueo_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_testTests.debug.xcconfig"; path = "Target Support Files/Pods-Merqueo_testTests/Pods-Merqueo_testTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA427D9AD20ED87B03775F41 /* Pods_Merqueo_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Merqueo_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB2DA472C7E9CA1694FD650 /* Pods-Merqueo_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Merqueo_test.debug.xcconfig"; path = "Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +184,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84003EAE26474AF800FC01B0 /* MerqueoCore.framework in Frameworks */,
+				1AC7A9838B305CB3042E07F5 /* Pods_Merqueo_test.framework in Frameworks */,
+				84003EB626474C8300FC01B0 /* MerqueoData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E9C5411E3FC568F60F2A08 /* Pods_Merqueo_testTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +202,127 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD6EA67632C1953EF6E89FA /* Pods_Merqueo_test_Merqueo_testUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84003E1F2646F1AC00FC01B0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				84003E202646F20500FC01B0 /* BaseCoordinator.swift */,
+				84003E262646F21900FC01B0 /* CoordinatorType.swift */,
+				84003E2A2646F23000FC01B0 /* Presentable.swift */,
+				84003E2E2646F24800FC01B0 /* RemoveReferenceDelegate.swift */,
+				84003E322646F25B00FC01B0 /* MainRouter.swift */,
+				84003E362646F27600FC01B0 /* RouterType.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		84003E3A2646F2EB00FC01B0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				84003E3B2646F2F800FC01B0 /* ApplicationViewController.swift */,
+				84003E4E2646F38B00FC01B0 /* ApplicationContract.swift */,
+				84003E522646F39F00FC01B0 /* ApplicationPresenter.swift */,
+				84003E562646F3B900FC01B0 /* ApplicationCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		84003E412646F31E00FC01B0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				848FC2C226482D940090D9C3 /* Collection */,
+				84003E422646F32700FC01B0 /* BaseViewController.swift */,
+				84003E462646F33D00FC01B0 /* BasePresenter.swift */,
+				84003E4A2646F35500FC01B0 /* BaseContract.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		84003E602646F68200FC01B0 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				84003E612646F69500FC01B0 /* LoadingViewController.swift */,
+				84003E672646F77900FC01B0 /* LoadingCoordinator.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		84121ABC2648928700E55FEF /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				84121ABD2648929A00E55FEF /* GetMoviesInteractorStub.swift */,
+				84121AC32648952600E55FEF /* BaseInteractorStub.swift */,
+				84DEBDE6264B1825009E2F56 /* GetMovieDetailInteractorStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		84121AC72648955E00E55FEF /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				84121AC82648956C00E55FEF /* TestError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		84121AD7264898C500E55FEF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84121AD8264898D600E55FEF /* TestConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		84121ADE26489B1C00E55FEF /* DialogView */ = {
+			isa = PBXGroup;
+			children = (
+				84121ADF26489B3600E55FEF /* DialogViewController.swift */,
+				84121AE526489B7000E55FEF /* DialogView.swift */,
+				84121AE92648A33C00E55FEF /* DialogCoordinator.swift */,
+			);
+			path = DialogView;
+			sourceTree = "<group>";
+		};
+		841381F1264A0CC40024BA40 /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				841381F2264A0CE20024BA40 /* MovieDetailViewController.swift */,
+				841381F8264A0CF20024BA40 /* MovieDetailPresenter.swift */,
+				841381FC264A0CFB0024BA40 /* MovieDetailContract.swift */,
+				84138200264A0D070024BA40 /* MovieDetailCoordinator.swift */,
+				84DEBDBF264B0B39009E2F56 /* MovieDetailView.swift */,
+				84DEBDEA264B1D4E009E2F56 /* MovieDetailAbstractFactory.swift */,
+				84DEBDEE264B2075009E2F56 /* MovieDetailDescriptionView.swift */,
+				84DEBDF2264B2992009E2F56 /* ProductionCompanyView.swift */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		848FC2C226482D940090D9C3 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				848FC2C326482DAC0090D9C3 /* CollectionDataSource.swift */,
+				848FC2C926482E7C0090D9C3 /* CollectionViewCell.swift */,
+				848FC2CD26482EC60090D9C3 /* ObjectView.swift */,
+				848FC2D12648359A0090D9C3 /* CollectionViewHorizontalCustom.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		848FC30726488CDA0090D9C3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				848FC30826488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		8495BEA72646CE34005F4E28 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +330,8 @@
 				8495BECC2646CE35005F4E28 /* Merqueo_testTests */,
 				8495BED72646CE35005F4E28 /* Merqueo_testUITests */,
 				8495BEB12646CE34005F4E28 /* Products */,
+				933F6F50EDF3AC0F44F950F0 /* Pods */,
+				D1FADD44869103F8639EDBEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +348,20 @@
 		8495BEB22646CE34005F4E28 /* Merqueo_test */ = {
 			isa = PBXGroup;
 			children = (
+				841381F1264A0CC40024BA40 /* MovieDetail */,
+				84121ADE26489B1C00E55FEF /* DialogView */,
+				848FC30726488CDA0090D9C3 /* Extension */,
+				84FA3DC22647720900C2BB3A /* Home */,
+				84003E602646F68200FC01B0 /* Loading */,
+				84003E412646F31E00FC01B0 /* Base */,
+				84003E3A2646F2EB00FC01B0 /* Application */,
+				84003E1F2646F1AC00FC01B0 /* Coordinator */,
 				8495BEB32646CE34005F4E28 /* AppDelegate.swift */,
 				8495BEB52646CE34005F4E28 /* SceneDelegate.swift */,
-				8495BEB72646CE34005F4E28 /* ViewController.swift */,
-				8495BEB92646CE34005F4E28 /* Main.storyboard */,
 				8495BEBF2646CE35005F4E28 /* Assets.xcassets */,
 				8495BEC12646CE35005F4E28 /* LaunchScreen.storyboard */,
 				8495BEC42646CE35005F4E28 /* Info.plist */,
 				8495BEBC2646CE34005F4E28 /* Merqueo_test.xcdatamodeld */,
-				8495BEE92646CEB1005F4E28 /* merqueoSettings.plist */,
 			);
 			path = Merqueo_test;
 			sourceTree = "<group>";
@@ -119,6 +369,10 @@
 		8495BECC2646CE35005F4E28 /* Merqueo_testTests */ = {
 			isa = PBXGroup;
 			children = (
+				84121AD7264898C500E55FEF /* Constants */,
+				84121AC72648955E00E55FEF /* Errors */,
+				84121ABC2648928700E55FEF /* Stubs */,
+				84E739142648900600ACAE52 /* Presenters */,
 				8495BECD2646CE35005F4E28 /* Merqueo_testTests.swift */,
 				8495BECF2646CE35005F4E28 /* Info.plist */,
 			);
@@ -134,6 +388,74 @@
 			path = Merqueo_testUITests;
 			sourceTree = "<group>";
 		};
+		84DEBDDB264B1742009E2F56 /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				84DEBDDC264B174F009E2F56 /* MovieDetailPresenterTest.swift */,
+				84DEBDE2264B17A7009E2F56 /* MovieDetailViewSpy.swift */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		84E739142648900600ACAE52 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				84DEBDDB264B1742009E2F56 /* MovieDetail */,
+				84E7391B2648908900ACAE52 /* Home */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		84E7391B2648908900ACAE52 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84E739152648902400ACAE52 /* HomePresenterTest.swift */,
+				84E7391C264890A000ACAE52 /* HomeViewSpy.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		84FA3DC22647720900C2BB3A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				84FA3DC32647721700C2BB3A /* HomeViewController.swift */,
+				84FA3DC9264772CC00C2BB3A /* HomePresenter.swift */,
+				84FA3DCD264772E200C2BB3A /* HomeContract.swift */,
+				84FA3DD1264773CE00C2BB3A /* HomeCoordinator.swift */,
+				848FC2BA264828B50090D9C3 /* HomeView.swift */,
+				848FC2BE26482D5B0090D9C3 /* HomeDataSource.swift */,
+				848FC2D5264837B90090D9C3 /* MovieObjectView.swift */,
+				848FC2D9264837F50090D9C3 /* MovieCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		933F6F50EDF3AC0F44F950F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDB2DA472C7E9CA1694FD650 /* Pods-Merqueo_test.debug.xcconfig */,
+				9B1E70E318DD45FE98B973B2 /* Pods-Merqueo_test.release.xcconfig */,
+				6A292CF8F200A8827B4F6D34 /* Pods-Merqueo_test-Merqueo_testUITests.debug.xcconfig */,
+				AD4426C9471EA0B674AAD73A /* Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig */,
+				B88155FB9A3B8E3BA0137AD2 /* Pods-Merqueo_testTests.debug.xcconfig */,
+				4654352D7874263AE9B5E3A5 /* Pods-Merqueo_testTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D1FADD44869103F8639EDBEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84003EB526474C8300FC01B0 /* MerqueoData.framework */,
+				84003EAD26474AF800FC01B0 /* MerqueoCore.framework */,
+				842F27E92646DE5200C531B1 /* MerqueoData.framework */,
+				EA427D9AD20ED87B03775F41 /* Pods_Merqueo_test.framework */,
+				189F6D1B5A1F2A60EC5E71DC /* Pods_Merqueo_test_Merqueo_testUITests.framework */,
+				1A5F6A59EDA7C0DEF76AFF5D /* Pods_Merqueo_testTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +463,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8495BEDD2646CE35005F4E28 /* Build configuration list for PBXNativeTarget "Merqueo_test" */;
 			buildPhases = (
+				27E7BBD12E611D388B7B8A47 /* [CP] Check Pods Manifest.lock */,
 				8495BEAC2646CE34005F4E28 /* Sources */,
 				8495BEAD2646CE34005F4E28 /* Frameworks */,
 				8495BEAE2646CE34005F4E28 /* Resources */,
+				84003EB026474AF800FC01B0 /* Embed Frameworks */,
+				D61CB1ED445CD4947393EEB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +483,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8495BEE02646CE35005F4E28 /* Build configuration list for PBXNativeTarget "Merqueo_testTests" */;
 			buildPhases = (
+				E7481B52719E843147B67981 /* [CP] Check Pods Manifest.lock */,
 				8495BEC52646CE35005F4E28 /* Sources */,
 				8495BEC62646CE35005F4E28 /* Frameworks */,
 				8495BEC72646CE35005F4E28 /* Resources */,
@@ -176,9 +502,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8495BEE32646CE35005F4E28 /* Build configuration list for PBXNativeTarget "Merqueo_testUITests" */;
 			buildPhases = (
+				D177B1F0335B34F0A22662AA /* [CP] Check Pods Manifest.lock */,
 				8495BED02646CE35005F4E28 /* Sources */,
 				8495BED12646CE35005F4E28 /* Frameworks */,
 				8495BED22646CE35005F4E28 /* Resources */,
+				C6C4BF5C364D07F24F631584 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,8 +567,6 @@
 			files = (
 				8495BEC32646CE35005F4E28 /* LaunchScreen.storyboard in Resources */,
 				8495BEC02646CE35005F4E28 /* Assets.xcassets in Resources */,
-				8495BEEA2646CEB1005F4E28 /* merqueoSettings.plist in Resources */,
-				8495BEBB2646CE34005F4E28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,15 +586,156 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27E7BBD12E611D388B7B8A47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Merqueo_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C4BF5C364D07F24F631584 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test-Merqueo_testUITests/Pods-Merqueo_test-Merqueo_testUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D177B1F0335B34F0A22662AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Merqueo_test-Merqueo_testUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D61CB1ED445CD4947393EEB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Merqueo_test/Pods-Merqueo_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7481B52719E843147B67981 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Merqueo_testTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8495BEAC2646CE34005F4E28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8495BEB82646CE34005F4E28 /* ViewController.swift in Sources */,
+				84003E572646F3B900FC01B0 /* ApplicationCoordinator.swift in Sources */,
+				84003E2F2646F24800FC01B0 /* RemoveReferenceDelegate.swift in Sources */,
+				84FA3DC42647721700C2BB3A /* HomeViewController.swift in Sources */,
+				84FA3DCE264772E200C2BB3A /* HomeContract.swift in Sources */,
+				84121AE026489B3600E55FEF /* DialogViewController.swift in Sources */,
+				84FA3DCA264772CC00C2BB3A /* HomePresenter.swift in Sources */,
+				84003E622646F69500FC01B0 /* LoadingViewController.swift in Sources */,
+				84003E532646F39F00FC01B0 /* ApplicationPresenter.swift in Sources */,
+				848FC2D22648359A0090D9C3 /* CollectionViewHorizontalCustom.swift in Sources */,
+				848FC2DA264837F50090D9C3 /* MovieCell.swift in Sources */,
+				84003E212646F20500FC01B0 /* BaseCoordinator.swift in Sources */,
+				841381F3264A0CE20024BA40 /* MovieDetailViewController.swift in Sources */,
+				848FC2D6264837B90090D9C3 /* MovieObjectView.swift in Sources */,
+				848FC2CA26482E7C0090D9C3 /* CollectionViewCell.swift in Sources */,
+				84003E4B2646F35500FC01B0 /* BaseContract.swift in Sources */,
+				84003E372646F27600FC01B0 /* RouterType.swift in Sources */,
+				84003E682646F77900FC01B0 /* LoadingCoordinator.swift in Sources */,
+				84121AE626489B7000E55FEF /* DialogView.swift in Sources */,
+				84138201264A0D070024BA40 /* MovieDetailCoordinator.swift in Sources */,
+				84003E272646F21900FC01B0 /* CoordinatorType.swift in Sources */,
+				84003E432646F32700FC01B0 /* BaseViewController.swift in Sources */,
 				8495BEB42646CE34005F4E28 /* AppDelegate.swift in Sources */,
+				84003E4F2646F38B00FC01B0 /* ApplicationContract.swift in Sources */,
+				84DEBDF3264B2992009E2F56 /* ProductionCompanyView.swift in Sources */,
+				848FC2CE26482EC60090D9C3 /* ObjectView.swift in Sources */,
+				841381FD264A0CFB0024BA40 /* MovieDetailContract.swift in Sources */,
+				84121AEA2648A33C00E55FEF /* DialogCoordinator.swift in Sources */,
+				841381F9264A0CF20024BA40 /* MovieDetailPresenter.swift in Sources */,
 				8495BEBE2646CE34005F4E28 /* Merqueo_test.xcdatamodeld in Sources */,
+				84DEBDEB264B1D4E009E2F56 /* MovieDetailAbstractFactory.swift in Sources */,
+				84DEBDEF264B2075009E2F56 /* MovieDetailDescriptionView.swift in Sources */,
+				84003E472646F33D00FC01B0 /* BasePresenter.swift in Sources */,
 				8495BEB62646CE34005F4E28 /* SceneDelegate.swift in Sources */,
+				84003E2B2646F23000FC01B0 /* Presentable.swift in Sources */,
+				848FC2BF26482D5B0090D9C3 /* HomeDataSource.swift in Sources */,
+				84003E332646F25B00FC01B0 /* MainRouter.swift in Sources */,
+				84DEBDC0264B0B39009E2F56 /* MovieDetailView.swift in Sources */,
+				84003E3C2646F2F800FC01B0 /* ApplicationViewController.swift in Sources */,
+				848FC2BB264828B50090D9C3 /* HomeView.swift in Sources */,
+				84FA3DD2264773CE00C2BB3A /* HomeCoordinator.swift in Sources */,
+				848FC2C426482DAC0090D9C3 /* CollectionDataSource.swift in Sources */,
+				848FC30926488CFC0090D9C3 /* UIViewController +NavigationBarColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +743,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84121AC92648956C00E55FEF /* TestError.swift in Sources */,
+				84121AD9264898D600E55FEF /* TestConstants.swift in Sources */,
+				84121ABE2648929A00E55FEF /* GetMoviesInteractorStub.swift in Sources */,
+				84121AC42648952600E55FEF /* BaseInteractorStub.swift in Sources */,
+				84DEBDDD264B174F009E2F56 /* MovieDetailPresenterTest.swift in Sources */,
+				84DEBDE7264B1825009E2F56 /* GetMovieDetailInteractorStub.swift in Sources */,
+				84E7391D264890A000ACAE52 /* HomeViewSpy.swift in Sources */,
 				8495BECE2646CE35005F4E28 /* Merqueo_testTests.swift in Sources */,
+				84DEBDE3264B17A7009E2F56 /* MovieDetailViewSpy.swift in Sources */,
+				84E739162648902400ACAE52 /* HomePresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,14 +780,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8495BEB92646CE34005F4E28 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8495BEBA2646CE34005F4E28 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8495BEC12646CE35005F4E28 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,6 +909,7 @@
 		};
 		8495BEDE2646CE35005F4E28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB2DA472C7E9CA1694FD650 /* Pods-Merqueo_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +928,7 @@
 		};
 		8495BEDF2646CE35005F4E28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B1E70E318DD45FE98B973B2 /* Pods-Merqueo_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -477,6 +947,7 @@
 		};
 		8495BEE12646CE35005F4E28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B88155FB9A3B8E3BA0137AD2 /* Pods-Merqueo_testTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +969,7 @@
 		};
 		8495BEE22646CE35005F4E28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4654352D7874263AE9B5E3A5 /* Pods-Merqueo_testTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +991,7 @@
 		};
 		8495BEE42646CE35005F4E28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A292CF8F200A8827B4F6D34 /* Pods-Merqueo_test-Merqueo_testUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +1011,7 @@
 		};
 		8495BEE52646CE35005F4E28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD4426C9471EA0B674AAD73A /* Pods-Merqueo_test-Merqueo_testUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +1029,128 @@
 			};
 			name = Release;
 		};
+		84DEBDF6264B36A5009E2F56 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Test;
+		};
+		84DEBDF7264B36A5009E2F56 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB2DA472C7E9CA1694FD650 /* Pods-Merqueo_test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Merqueo_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlos.Merqueo-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		84DEBDF8264B36A5009E2F56 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B88155FB9A3B8E3BA0137AD2 /* Pods-Merqueo_testTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Merqueo_testTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlos.Merqueo-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Merqueo_test.app/Merqueo_test";
+			};
+			name = Test;
+		};
+		84DEBDF9264B36A5009E2F56 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A292CF8F200A8827B4F6D34 /* Pods-Merqueo_test-Merqueo_testUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Merqueo_testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlos.Merqueo-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Merqueo_test;
+			};
+			name = Test;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -562,6 +1158,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8495BEDB2646CE35005F4E28 /* Debug */,
+				84DEBDF6264B36A5009E2F56 /* Test */,
 				8495BEDC2646CE35005F4E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -571,6 +1168,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8495BEDE2646CE35005F4E28 /* Debug */,
+				84DEBDF7264B36A5009E2F56 /* Test */,
 				8495BEDF2646CE35005F4E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -580,6 +1178,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8495BEE12646CE35005F4E28 /* Debug */,
+				84DEBDF8264B36A5009E2F56 /* Test */,
 				8495BEE22646CE35005F4E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -589,6 +1188,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8495BEE42646CE35005F4E28 /* Debug */,
+				84DEBDF9264B36A5009E2F56 /* Test */,
 				8495BEE52646CE35005F4E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
