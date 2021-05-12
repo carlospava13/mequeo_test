@@ -7,7 +7,19 @@
 
 import UIKit
 
+protocol HomeViewDelegate: AnyObject {
+    func didMovieSelected(_ movie: MovieObjectView)
+    func refresh()
+}
+
 final class HomeView: UIView {
+    
+    private lazy var refreshControl: UIRefreshControl = {
+       let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
+        refreshControl.tintColor = .white
+        return refreshControl
+    }()
     
     private lazy var collectionView: UICollectionView = {
         let flow = CollectionViewHorizontalCustom()
@@ -16,14 +28,19 @@ final class HomeView: UIView {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.register(MovieCell.self,
                                 forCellWithReuseIdentifier: CollectionCellIdentifier.movie.rawValue)
+        collectionView.addSubview(refreshControl)
         return collectionView
     }()
     
     private lazy var dataSource: HomeDataSource = {
         let datasource = HomeDataSource(identifier: .movie)
+        datasource.homeDataSourceDelegate = self
         collectionView.dataSource = datasource
+        collectionView.delegate = datasource
         return datasource
     }()
+    
+    weak var delegate: HomeViewDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -48,5 +65,21 @@ final class HomeView: UIView {
     
     func set(movies: [MovieObjectView]) {
         dataSource.set(data: movies)
+    }
+    
+    @objc private func onRefresh() {
+        delegate?.refresh()
+    }
+    
+    func endRefresh() {
+        if refreshControl.isRefreshing {
+            refreshControl.endRefreshing()
+        }
+    }
+}
+
+extension HomeView: HomeDataSourceDelegate {
+    func didMovieSelected(_ movie: MovieObjectView) {
+        delegate?.didMovieSelected(movie)
     }
 }

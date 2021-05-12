@@ -19,7 +19,8 @@ public final class GetMoviesInteractor: GetMoviesInteractorType {
         repository.getMovies().map { (result) -> [MovieCoreDto] in
             result.results.map { (movieDto) -> MovieCoreDto in
                 MovieCoreDto(title: movieDto.title,
-                             posterPath: movieDto.posterPath)
+                             posterPath: movieDto.posterPath,
+                             id: movieDto.id)
             }
         }.eraseToAnyPublisher()
     }

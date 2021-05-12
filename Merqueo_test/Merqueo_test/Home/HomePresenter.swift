@@ -30,7 +30,8 @@ final class HomePresenter: BasePresenter {
 
     private func getMovies() {
         dependencies.coordinator?.showLoading()
-        dependencies.getMoviesInteractor.getMovies().sink { [weak self] completion in
+        dependencies.getMoviesInteractor.getMovies().sink { [weak self, weak ownerView] completion in
+            ownerView?.endRefresh()
             switch completion {
             case .failure(let error):
                 self?.dependencies.coordinator?.hideLoading(completion: {
@@ -49,10 +50,19 @@ final class HomePresenter: BasePresenter {
         let movies = movies.map { (movieDto) -> MovieObjectView in
             MovieObjectView(
                 title: movieDto.title,
-                posterPath: movieDto.posterPath)
+                posterPath: movieDto.posterPath,
+                id: movieDto.id)
         }
         ownerView.set(movies: movies)
     }
 }
 
-extension HomePresenter: HomePresenterType {}
+extension HomePresenter: HomePresenterType {
+    func movieSelected(_ movie: MovieObjectView) {
+        dependencies.coordinator?.showMovieDetail(id: movie.id)
+    }
+    
+    func refreshMovies() {
+        getMovies()
+    }
+}

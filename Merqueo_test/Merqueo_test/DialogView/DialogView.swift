@@ -12,6 +12,7 @@ protocol DialogViewDelegate: AnyObject {
 }
 
 final class DialogView: UIView {
+    
     private lazy var containerView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false

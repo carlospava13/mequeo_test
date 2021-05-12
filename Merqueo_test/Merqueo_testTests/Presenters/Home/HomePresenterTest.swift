@@ -101,4 +101,43 @@ class HomePresenterTest: XCTestCase {
         wait(for: [expectation], timeout: 1.0)
         XCTAssertTrue(valueExpected)
     }
+    
+    func testGetMovies_WhenIsReloading_ThenCallEndReload() {
+        // Given
+        let expectation = self.expectation(description: "get movies")
+        var valueExpected = false
+        // When
+        
+        spy.endRefreshCallBack = {
+            valueExpected = true
+            expectation.fulfill()
+        }
+
+        sut.viewDidLoad()
+        // Then
+        wait(for: [expectation], timeout: 1.0)
+        XCTAssertTrue(valueExpected)
+    }
+    
+    func testGetMovies_WhenIsMovieSelected_ThenCall() {
+        // Given
+        let expectation = self.expectation(description: "get movies")
+        interactor.responseHandler = .success(TestConstants.Movie.movieObjectViews)
+        var valueExpected = false
+        // When
+        
+        spy.setMoviesCallBack = { movies in
+            self.homeCoordinatorSpy.showMovieDetail(id: movies.first!.id)
+        }
+        
+        homeCoordinatorSpy.showMovieDetailCallBack = {
+            valueExpected = true
+            expectation.fulfill()
+        }
+
+        sut.viewDidLoad()
+        // Then
+        wait(for: [expectation], timeout: 1.0)
+        XCTAssertTrue(valueExpected)
+    }
 }

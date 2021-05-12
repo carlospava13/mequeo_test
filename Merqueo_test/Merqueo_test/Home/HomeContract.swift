@@ -8,9 +8,11 @@
 import Foundation
 
 protocol HomePresenterType: BasePresenterType {
-    
+    func refreshMovies()
+    func movieSelected(_ movie: MovieObjectView)
 }
 
 protocol HomeViewType: BaseViewType {
     func set(movies: [MovieObjectView])
+    func endRefresh()
 }

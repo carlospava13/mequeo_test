@@ -25,6 +25,12 @@
 		84CB35262646D1010002B421 /* MerqueoDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB35252646D1010002B421 /* MerqueoDataTests.swift */; };
 		84CB35282646D1010002B421 /* MerqueoData.h in Headers */ = {isa = PBXBuildFile; fileRef = 84CB351A2646D1010002B421 /* MerqueoData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84CB35382646D1420002B421 /* ApiClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB35372646D1420002B421 /* ApiClientType.swift */; };
+		84DEBDC4264B0D31009E2F56 /* GetMovieDetailRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDC3264B0D31009E2F56 /* GetMovieDetailRepositoryType.swift */; };
+		84DEBDCA264B0D61009E2F56 /* MovieDetailDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDC9264B0D61009E2F56 /* MovieDetailDto.swift */; };
+		84DEBDCE264B0E6A009E2F56 /* GetMovieDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBDCD264B0E6A009E2F56 /* GetMovieDetailRepository.swift */; };
+		84DEBE06264B666F009E2F56 /* GetPopularMovieRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBE05264B666F009E2F56 /* GetPopularMovieRepositoryTest.swift */; };
+		84DEBE0C264B67C9009E2F56 /* TestConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBE0B264B67C9009E2F56 /* TestConstant.swift */; };
+		84DEBE12264B69B8009E2F56 /* GetMovieDetailRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DEBE11264B69B8009E2F56 /* GetMovieDetailRepositoryTest.swift */; };
 		84FA3DB726474FF700C2BB3A /* DataStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DB626474FF700C2BB3A /* DataStorageType.swift */; };
 		84FA3DBF2647506E00C2BB3A /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DBE2647506E00C2BB3A /* DataStorage.swift */; };
 		84FA3DD626477D0800C2BB3A /* GetPopularMovieRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA3DD526477D0800C2BB3A /* GetPopularMovieRepositoryType.swift */; };
@@ -64,6 +70,12 @@
 		84CB35252646D1010002B421 /* MerqueoDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerqueoDataTests.swift; sourceTree = "<group>"; };
 		84CB35272646D1010002B421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CB35372646D1420002B421 /* ApiClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientType.swift; sourceTree = "<group>"; };
+		84DEBDC3264B0D31009E2F56 /* GetMovieDetailRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailRepositoryType.swift; sourceTree = "<group>"; };
+		84DEBDC9264B0D61009E2F56 /* MovieDetailDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailDto.swift; sourceTree = "<group>"; };
+		84DEBDCD264B0E6A009E2F56 /* GetMovieDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailRepository.swift; sourceTree = "<group>"; };
+		84DEBE05264B666F009E2F56 /* GetPopularMovieRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPopularMovieRepositoryTest.swift; sourceTree = "<group>"; };
+		84DEBE0B264B67C9009E2F56 /* TestConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstant.swift; sourceTree = "<group>"; };
+		84DEBE11264B69B8009E2F56 /* GetMovieDetailRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailRepositoryTest.swift; sourceTree = "<group>"; };
 		84FA3DB626474FF700C2BB3A /* DataStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorageType.swift; sourceTree = "<group>"; };
 		84FA3DBE2647506E00C2BB3A /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		84FA3DD526477D0800C2BB3A /* GetPopularMovieRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPopularMovieRepositoryType.swift; sourceTree = "<group>"; };
@@ -94,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				84003E122646ECB900FC01B0 /* GetTokenRepositoryTest.swift */,
+				84DEBE05264B666F009E2F56 /* GetPopularMovieRepositoryTest.swift */,
+				84DEBE11264B69B8009E2F56 /* GetMovieDetailRepositoryTest.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -117,6 +131,7 @@
 				842F27D02646D6CE00C531B1 /* BaseRepository.swift */,
 				84003EBA26474E1500FC01B0 /* SaveTokenRepositoryType.swift */,
 				84FA3DD526477D0800C2BB3A /* GetPopularMovieRepositoryType.swift */,
+				84DEBDC3264B0D31009E2F56 /* GetMovieDetailRepositoryType.swift */,
 			);
 			path = RepositoryType;
 			sourceTree = "<group>";
@@ -127,6 +142,7 @@
 				842F27C82646D5BF00C531B1 /* GetTokenRepository.swift */,
 				84003EBE26474EA900FC01B0 /* SaveTokenRepository.swift */,
 				84FA3DDF26477EB700C2BB3A /* GetPopularMovieRepository.swift */,
+				84DEBDCD264B0E6A009E2F56 /* GetMovieDetailRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -136,6 +152,7 @@
 			children = (
 				842F27D52646D70000C531B1 /* TokenDto.swift */,
 				84FA3DD926477D8500C2BB3A /* MovieDto.swift */,
+				84DEBDC9264B0D61009E2F56 /* MovieDetailDto.swift */,
 			);
 			path = Dto;
 			sourceTree = "<group>";
@@ -185,12 +202,21 @@
 		84CB35242646D1010002B421 /* MerqueoDataTests */ = {
 			isa = PBXGroup;
 			children = (
+				84DEBE0A264B67B3009E2F56 /* Constant */,
 				84003E112646ECA500FC01B0 /* Repository */,
 				842F27FF2646EB5B00C531B1 /* Stubs */,
 				84CB35252646D1010002B421 /* MerqueoDataTests.swift */,
 				84CB35272646D1010002B421 /* Info.plist */,
 			);
 			path = MerqueoDataTests;
+			sourceTree = "<group>";
+		};
+		84DEBE0A264B67B3009E2F56 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				84DEBE0B264B67C9009E2F56 /* TestConstant.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		84FA3DB526474FE600C2BB3A /* DataStorage */ = {
@@ -317,6 +343,7 @@
 				842F27DE2646D8E800C531B1 /* EndPoint.swift in Sources */,
 				84FA3DB726474FF700C2BB3A /* DataStorageType.swift in Sources */,
 				84CB35382646D1420002B421 /* ApiClientType.swift in Sources */,
+				84DEBDCE264B0E6A009E2F56 /* GetMovieDetailRepository.swift in Sources */,
 				84FA3DD626477D0800C2BB3A /* GetPopularMovieRepositoryType.swift in Sources */,
 				84003EBB26474E1500FC01B0 /* SaveTokenRepositoryType.swift in Sources */,
 				842F27C22646D5A300C531B1 /* GetTokenRepositoryType.swift in Sources */,
@@ -326,8 +353,10 @@
 				842F27F02646E1EC00C531B1 /* Settings.swift in Sources */,
 				842F27B12646D20C00C531B1 /* ApiError.swift in Sources */,
 				84FA3DE026477EB700C2BB3A /* GetPopularMovieRepository.swift in Sources */,
+				84DEBDC4264B0D31009E2F56 /* GetMovieDetailRepositoryType.swift in Sources */,
 				84FA3DDA26477D8500C2BB3A /* MovieDto.swift in Sources */,
 				842F27B62646D24B00C531B1 /* ApiClient.swift in Sources */,
+				84DEBDCA264B0D61009E2F56 /* MovieDetailDto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +367,10 @@
 				84003E132646ECB900FC01B0 /* GetTokenRepositoryTest.swift in Sources */,
 				842F28012646EB6C00C531B1 /* TestError.swift in Sources */,
 				84CB35262646D1010002B421 /* MerqueoDataTests.swift in Sources */,
+				84DEBE12264B69B8009E2F56 /* GetMovieDetailRepositoryTest.swift in Sources */,
 				842F27FC2646E7C300C531B1 /* ApiClientStub.swift in Sources */,
+				84DEBE06264B666F009E2F56 /* GetPopularMovieRepositoryTest.swift in Sources */,
+				84DEBE0C264B67C9009E2F56 /* TestConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

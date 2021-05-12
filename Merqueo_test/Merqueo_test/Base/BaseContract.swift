@@ -10,7 +10,7 @@ import Foundation
 protocol BasePresenterType: AnyObject {
     func bind(_ view: BaseViewType)
     func viewDidLoad()
-    func viewWillAppear()
+    func viewDidDisappear()
 }
 
 protocol BaseViewType: AnyObject {
