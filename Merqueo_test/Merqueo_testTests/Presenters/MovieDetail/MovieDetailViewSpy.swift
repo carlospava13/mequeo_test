@@ -9,9 +9,11 @@ import Foundation
 @testable import Merqueo_test
 @testable import MerqueoCore
 final class MovieDetailViewSpy: MovieDetailViewType {
-    var showMovieDetailCallBack: (_ detail: MovieDetailCoreDto) -> Void = { _ in }
 
-    func showMovieDetail(_ detail: MovieDetailCoreDto) {
+    
+    var showMovieDetailCallBack: (_ detail: MovieDetailContainerObject) -> Void = { _ in }
+
+    func showMovieDetail(_ detail: MovieDetailContainerObject) {
         showMovieDetailCallBack(detail)
     }
 }

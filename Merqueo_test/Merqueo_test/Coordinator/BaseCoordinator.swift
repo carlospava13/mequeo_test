@@ -74,7 +74,7 @@ extension BaseCoordinator: BaseCoordinatorType {
 
 extension BaseCoordinator: DialogViewDelegate {
     func tryAgain() {
-        dialogCoordinator?.dismiss()
+        dialogCoordinator?.toPresent().dismiss(animated: true, completion: nil)
     }
 }
 

@@ -15,11 +15,12 @@ final class MovieDetailViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .black
     }
 }
 
 extension MovieDetailViewController: MovieDetailViewType {
-    func showMovieDetail(_ detail: MovieDetailCoreDto) {
+    func showMovieDetail(_ detail: MovieDetailContainerObject) {
         movieDetailView.showMovieDetail(detail)
     }
 }

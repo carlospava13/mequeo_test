@@ -16,20 +16,14 @@ final class DialogCoordinator: BaseCoordinator {
         self.delegate = delegate
     }
     
-    private lazy var dialogViewController = DialogViewController()
-    
     func start(description: String) {
+        let dialogViewController = DialogViewController()
         dialogViewController.modalTransitionStyle = .coverVertical
         dialogViewController.modalTransitionStyle = .crossDissolve
         dialogViewController.modalPresentationStyle = .overCurrentContext
         dialogViewController.delegate = delegate
         dialogViewController.set(description: description)
         router.rootViewController?.present(dialogViewController, animated: false, completion: nil)
-    }
-    
-    func dismiss() {
-        router.dismiss(dialogViewController, animated: false)
-        removeReferenceDelegete?.removeReference(self)
     }
 }
 

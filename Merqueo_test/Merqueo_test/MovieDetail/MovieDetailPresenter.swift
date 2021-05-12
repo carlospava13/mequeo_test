@@ -46,9 +46,46 @@ final class MovieDetailPresenter: BasePresenter {
             case .finished:
                 self?.dependencies.coordinator?.hideLoading(completion: nil)
             }
-        } receiveValue: { [weak ownerView] movieDetail in
-            ownerView?.showMovieDetail(movieDetail)
+        } receiveValue: { [weak self] movieDetail in
+            self?.buildView(movieDetail)
         }.store(in: &subscriptions)
+    }
+
+    private func buildView(_ movieDetail: MovieDetailCoreDto) {
+        var movieDetailFactory = [MovieDetailObjectViewType]()
+        movieDetailFactory.append(MovieDetailObjectView(
+            title: "Titulo",
+            description: movieDetail.originalTitle))
+        movieDetailFactory.append(MovieDetailObjectView(
+            title: "Resumen",
+            description: movieDetail.overview))
+        movieDetailFactory.append(fillGenres(genresList: movieDetail.genres))
+        
+        ownerView.showMovieDetail(MovieDetailContainerObject(
+            backdropPath: movieDetail.backdropPath,
+            originalTitle: movieDetail.originalTitle,
+            movieDetailObjectViews: movieDetailFactory,
+            productionCompanyViews: fillProductionCompanies(productionCompanyList: movieDetail.productionCompanies)))
+    }
+
+    private func fillProductionCompanies(productionCompanyList: [ProductionCompaniesCoreDto]) -> [MovieDetailObjectViewType] {
+        var productionCompanies = [MovieDetailObjectViewType]()
+        productionCompanyList.forEach { productionCompany in
+            productionCompanies.append(MovieDetailObjectView(
+                title: productionCompany.name,
+                description: productionCompany.logoPath))
+        }
+        return productionCompanies
+    }
+
+    private func fillGenres(genresList: [GenresCoreDto]) -> MovieDetailObjectView {
+        var genres = String()
+        genresList.forEach { genre in
+            genres.append("\(genre.name), ")
+        }
+        return MovieDetailObjectView(
+            title: "Generos",
+            description: genres)
     }
 }
 

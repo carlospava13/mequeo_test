@@ -10,5 +10,5 @@ import MerqueoCore
 protocol MovieDetailPresenterType: BasePresenterType {}
 
 protocol MovieDetailViewType: BaseViewType {
-    func showMovieDetail(_ detail: MovieDetailCoreDto)
+    func showMovieDetail(_ detail: MovieDetailContainerObject)
 }

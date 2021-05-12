@@ -24,7 +24,11 @@ public final class GetMovieDetailInteractor: GetMovieDetailInteractorType {
                                               name: genresDto.name)
                                }), originalTitle: movieDetailDto.originalTitle,
                                overview: movieDetailDto.overview,
-                               posterPath: movieDetailDto.posterPath)
+                               posterPath: movieDetailDto.posterPath,
+                               productionCompanies: movieDetailDto.productionCompanies.map({ (productionCompaniesDto) -> ProductionCompaniesCoreDto in
+                                ProductionCompaniesCoreDto(logoPath: productionCompaniesDto.logoPath,
+                                                           name: productionCompaniesDto.name)
+                               }))
         }.eraseToAnyPublisher()
     }
     

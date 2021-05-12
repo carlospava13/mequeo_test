@@ -20,10 +20,9 @@ public final class ApiClient: ApiClientType {
                 guard let response = $0.response as? HTTPURLResponse, response.statusCode == 200 else {
                     throw ApiError.responseUnsuccessful
                 }
-
+    
                 return $0.data
             }
-            .print()
             .receive(on: RunLoop.main)
             .decode(type: T.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()

@@ -17,7 +17,7 @@ final class MovieCell: CollectionViewCell<MovieObjectView> {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setTitleLabelConstraints()
+        setImageViewConstraints()
     }
 
     @available(*, unavailable)
@@ -25,7 +25,7 @@ final class MovieCell: CollectionViewCell<MovieObjectView> {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func setTitleLabelConstraints() {
+    private func setImageViewConstraints() {
         contentView.addSubview(imageView)
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
